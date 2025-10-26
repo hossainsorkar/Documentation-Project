@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNF Laravel - Complete Documentation | Business Management System</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <button class="mobile-menu-toggle" id="menuToggle">☰</button>
+
+    <div class="documentation-wrapper">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>CNF Laravel</h2>
+                <div class="version">v2.1.0</div>
+            </div>
+
+            <div class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Getting Started</div>
+                    <div class="nav-links">
+                        <a href="#introduction" class="active">📋 Introduction</a>
+                        <a href="#requirements">⚙️ Requirements</a>
+                        <a href="#rezaul-requirements">⚙️ Rezaul Requirements</a>
+                        <a href="#installation">🚀 Installation</a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">Core Modules</div>
+                    <div class="nav-links">
+                        <a href="#user-management">👥 User Management</a>
+                        <a href="#role-permissions">🔐 Roles & Permissions</a>
+                        <a href="#business-management">🏢 Business Operations</a>
+                        <a href="#financial-management">💰 Financial System</a>
+                        <a href="#reporting-analytics">📊 Reporting & Analytics</a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">Configuration</div>
+                    <div class="nav-links">
+                        <a href="#environment">🔧 Environment Setup</a>
+                        <a href="#database">🗄️ Database Config</a>
+                        <a href="#routes">🛣️ Route Structure</a>
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <div class="nav-section-title">Support</div>
+                    <div class="nav-links">
+                        <a href="#faq">❓ FAQ</a>
+                        <a href="#troubleshooting">🔧 Troubleshooting</a>
+                        <a href="#support-policy">📞 Support Policy</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="content-header">
+                <h1>CNF Laravel Business Management System</h1>
+                <p>Complete enterprise solution for business operations, financial management, and reporting. Built with
+                    Laravel and modern admin panel integration.</p>
+            </header>
+
+            <div class="content-body">
+                <!-- Introduction Section -->
+                <section id="introduction" class="section">
+                    <h2>Introduction</h2>
+                    <p>Welcome to <strong>CNF Laravel Business Management System</strong> - a comprehensive enterprise
+                        solution designed to streamline business operations, financial management, and reporting. Built
+                        on the robust Laravel framework with modern admin panel integration.</p>
+
+                    <div class="alert alert-info">
+                        <strong>Professional Business Solution:</strong> This system provides complete management
+                        capabilities for businesses with multiple branches, employees, terminals, and complex financial
+                        operations.
+                    </div>
+
+                    <h3>What is CNF Laravel?</h3>
+                    <p>CNF Laravel is a feature-rich business management system offering:</p>
+                    <ul>
+                        <li><strong>Multi-branch Management:</strong> Complete control over multiple business locations
+                        </li>
+                        <li><strong>Employee Management:</strong> Comprehensive staff management with role-based access
+                        </li>
+                        <li><strong>Financial Tracking:</strong> Advanced accounting, ledger management, and financial
+                            reporting</li>
+                        <li><strong>Job & Project Management:</strong> End-to-end job tracking and billing</li>
+                        <li><strong>Real-time Reporting:</strong> Comprehensive analytics and business intelligence</li>
+                        <li><strong>Security & Access Control:</strong> Robust role-based permission system</li>
+                    </ul>
+                </section>
+
+                <!-- Requirements Section -->
+                <section id="requirements" class="section">
+                    <h2>System Requirements</h2>
+                    <p>Ensure your hosting environment meets these requirements for optimal performance:</p>
+
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Component</th>
+                                    <th>Minimum</th>
+                                    <th>Recommended</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PHP Version</td>
+                                    <td>7.4+</td>
+                                    <td>8.1+</td>
+                                </tr>
+                                <tr>
+                                    <td>Laravel Framework</td>
+                                    <td>8.0</td>
+                                    <td>9.0+</td>
+                                </tr>
+                                <tr>
+                                    <td>Database</td>
+                                    <td>MySQL 5.7</td>
+                                    <td>MySQL 8.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Web Server</td>
+                                    <td>Apache 2.4 / Nginx 1.18</td>
+                                    <td>Nginx with PHP-FPM</td>
+                                </tr>
+                                <tr>
+                                    <td>Memory</td>
+                                    <td>256MB RAM</td>
+                                    <td>1GB+ RAM</td>
+                                </tr>
+                                <tr>
+                                    <td>PHP Extensions</td>
+                                    <td colspan="2">BCMath, Ctype, JSON, Mbstring, OpenSSL, PDO, Tokenizer, XML, cURL,
+                                        GD Library</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <strong>Important:</strong> Ensure <code>mod_rewrite</code> is enabled for Apache servers and
+                        proper Nginx configuration for clean URLs.
+                    </div>
+                </section>
+
+                <!-- Requirements Section -->
+                <section id="rezaul-requirements" class="section">
+                    <h2>Rezaul System Requirements</h2>
+                    <p>Ensure your hosting environment meets these requirements for optimal performance:</p>
+
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Component</th>
+                                    <th>Minimum</th>
+                                    <th>Recommended</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PHP Version</td>
+                                    <td>7.4+</td>
+                                    <td>8.1+</td>
+                                </tr>
+                                <tr>
+                                    <td>Laravel Framework</td>
+                                    <td>8.0</td>
+                                    <td>9.0+</td>
+                                </tr>
+                                <tr>
+                                    <td>Database</td>
+                                    <td>MySQL 5.7</td>
+                                    <td>MySQL 8.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Web Server</td>
+                                    <td>Apache 2.4 / Nginx 1.18</td>
+                                    <td>Nginx with PHP-FPM</td>
+                                </tr>
+                                <tr>
+                                    <td>Memory</td>
+                                    <td>256MB RAM</td>
+                                    <td>1GB+ RAM</td>
+                                </tr>
+                                <tr>
+                                    <td>PHP Extensions</td>
+                                    <td colspan="2">BCMath, Ctype, JSON, Mbstring, OpenSSL, PDO, Tokenizer, XML, cURL,
+                                        GD Library</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <strong>Important:</strong> Ensure <code>mod_rewrite</code> is enabled for Apache servers and
+                        proper Nginx configuration for clean URLs.
+                    </div>
+                </section>
+
+                <!-- Installation Section -->
+                <section id="installation" class="section">
+                    <h2>Installation Guide</h2>
+                    <p>Follow these steps to install CNF Laravel Business Management System:</p>
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Upload Project Files</h3>
+                            <p>Upload all project files to your web server, ensuring the directory structure is
+                                maintained.</p>
+                            <div class="code-block">
+                                # Using Git
+                                git clone your-repository-url cnf-business
+                                cd cnf-business
+
+                                # Or upload via FTP/SFTP
+                                # Ensure all files are uploaded to correct directory
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Environment Configuration</h3>
+                            <p>Configure your environment file with database and application settings:</p>
+                            <div class="code-block">
+                                APP_NAME="CNF Business Management"
+                                APP_ENV=production
+                                APP_DEBUG=false
+                                APP_URL=https://yourdomain.com
+
+                                DB_CONNECTION=mysql
+                                DB_HOST=127.0.0.1
+                                DB_PORT=3306
+                                DB_DATABASE=cnf_business
+                                DB_USERNAME=your_username
+                                DB_PASSWORD=your_password
+
+                                # Admin panel configuration
+                                ADMIN_PREFIX=cnf
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Install Dependencies</h3>
+                            <p>Install PHP dependencies and generate application key:</p>
+                            <div class="code-block">
+                                composer install --optimize-autoloader --no-dev
+                                php artisan key:generate
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Database Setup</h3>
+                            <p>Run migrations and seed the database with initial data:</p>
+                            <div class="code-block">
+                                php artisan migrate --seed
+                                php artisan storage:link
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Configure Permissions</h3>
+                            <p>Set proper file permissions for security:</p>
+                            <div class="code-block">
+                                chmod -R 755 storage
+                                chmod -R 755 bootstrap/cache
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <strong>Installation Complete!</strong> Access your application at
+                        <code>https://yourdomain.com/cnf</code> and login with default admin credentials.
+                    </div>
+                </section>
+
+                <!-- User Management Section -->
+                <section id="user-management" class="section">
+                    <h2>User Management System</h2>
+                    <p>Comprehensive user management with multi-level access control for different user types.</p>
+
+                    <h3>Admin User Management</h3>
+                    <p>Manage system administrators with full control over the application:</p>
+                    <div class="code-block">
+                        // Admin User Routes
+                        Route::get('admin-user', [AdminUserController::class, 'index'])->name('admin-user.index');
+                        Route::get('admin-user/create', [AdminUserController::class,
+                        'create'])->name('admin-user.create');
+                        Route::post('admin-user/store', [AdminUserController::class,
+                        'store'])->name('admin-user.store');
+                        Route::get('admin-user/edit/{id}', [AdminUserController::class,
+                        'edit'])->name('admin-user.edit');
+                        Route::put('admin-user/edit/{id}', [AdminUserController::class,
+                        'update'])->name('admin-user.update');
+                        Route::get('admin-user/show/{id}', [AdminUserController::class,
+                        'show'])->name('admin-user.show');
+                    </div>
+
+                    <h3>Employee Management</h3>
+                    <p>Complete employee management system with branch assignment:</p>
+                    <div class="code-block">
+                        // Employee Management Routes
+                        Route::get('employee', [EmployeeController::class, 'index'])->name('employee.index');
+                        Route::get('employee/create', [EmployeeController::class, 'create'])->name('employee.create');
+                        Route::post('employee/store', [EmployeeController::class, 'store'])->name('employee.store');
+                        Route::get('employee/edit/{id}', [EmployeeController::class, 'edit'])->name('employee.edit');
+                        Route::put('employee/edit/{id}', [EmployeeController::class,
+                        'update'])->name('employee.update');
+                        Route::get('employee/show/{id}', [EmployeeController::class, 'show'])->name('employee.show');
+                    </div>
+
+                    <h3>Profile Management</h3>
+                    <p>Users can manage their profiles and update personal information:</p>
+                    <div class="code-block">
+                        // Profile Management
+                        Route::get('/my-profile', [MyProfileController::class, 'show'])->name('my-profile.show');
+                    </div>
+                </section>
+
+                <!-- Role & Permissions Section -->
+                <section id="role-permissions" class="section">
+                    <h2>Roles & Permissions System</h2>
+                    <p>Advanced role-based access control system for secure multi-user management.</p>
+
+                    <h3>Role Management</h3>
+                    <p>Create and manage user roles with specific permissions:</p>
+                    <div class="code-block">
+                        // Role Management Routes
+                        Route::get('roles', [RoleController::class, 'index'])->name('roles');
+                        Route::get('role/create', [RoleController::class, 'create'])->name('roles.create');
+                        Route::post('roles/store', [RoleController::class, 'store'])->name('roles.store');
+                        Route::get('roles/edit/{id}', [RoleController::class, 'edit'])->name('roles.edit');
+                        Route::put('roles/edit/{id}', [RoleController::class, 'update'])->name('roles.update');
+                    </div>
+
+                    <h3>Permission Management</h3>
+                    <p>Define granular permissions and assign them to roles:</p>
+                    <div class="code-block">
+                        // Permission Management Routes
+                        Route::get('permissions', [PermissionsController::class, 'index'])->name('permissions');
+                        Route::get('permission/create', [PermissionsController::class,
+                        'create'])->name('permissions.create');
+                        Route::post('permissions/store', [PermissionsController::class,
+                        'store'])->name('permissions.store');
+                        Route::get('permissions/edit/{id}', [PermissionsController::class,
+                        'edit'])->name('permissions.edit');
+                        Route::put('permissions/edit/{id}', [PermissionsController::class,
+                        'update'])->name('permissions.update');
+                    </div>
+
+                    <h3>Access Control Features</h3>
+                    <ul>
+                        <li><strong>Granular Permissions:</strong> Control access to individual features and actions
+                        </li>
+                        <li><strong>Role Assignment:</strong> Assign users to specific roles with predefined permissions
+                        </li>
+                        <li><strong>Middleware Protection:</strong> Automatic access control on all protected routes
+                        </li>
+                        <li><strong>Audit Logging:</strong> Track all user activities and permission changes</li>
+                    </ul>
+                </section>
+
+                <!-- Business Management Section -->
+                <section id="business-management" class="section">
+                    <h2>Business Operations Management</h2>
+                    <p>Complete suite for managing daily business operations including branches, terminals, and jobs.
+                    </p>
+
+                    <h3>Branch Management</h3>
+                    <p>Manage multiple business locations with separate configurations:</p>
+                    <div class="code-block">
+                        // Branch Management Routes
+                        Route::get('branch', [BranchesController::class, 'index'])->name('branch.index');
+                        Route::get('branch/create', [BranchesController::class, 'create'])->name('branch.create');
+                        Route::post('branch/store', [BranchesController::class, 'store'])->name('branch.store');
+                        Route::get('branch/edit/{id}', [BranchesController::class, 'edit'])->name('branch.edit');
+                        Route::put('branch/edit/{id}', [BranchesController::class, 'update'])->name('branch.update');
+                    </div>
+
+                    <h3>Terminal Management</h3>
+                    <p>Manage business terminals and their operations:</p>
+                    <div class="code-block">
+                        // Terminal Management Routes
+                        Route::get('terminal', [TerminalController::class, 'index'])->name('terminal.index');
+                        Route::get('terminal/create', [TerminalController::class, 'create'])->name('terminal.create');
+                        Route::post('terminal/store', [TerminalController::class, 'store'])->name('terminal.store');
+                        Route::get('terminal/edit/{id}', [TerminalController::class, 'edit'])->name('terminal.edit');
+                        Route::put('terminal/edit/{id}', [TerminalController::class,
+                        'update'])->name('terminal.update');
+                    </div>
+
+                    <h3>Job Management</h3>
+                    <p>Complete job tracking and management system:</p>
+                    <div class="code-block">
+                        // Job Management Routes
+                        Route::get('jobs', [JobsController::class, 'index'])->name('jobs.index');
+                        Route::get('job/create', [JobsController::class, 'create'])->name('jobs.create');
+                        Route::post('job/store', [JobsController::class, 'store'])->name('jobs.store');
+                        Route::get('job/edit/{id}', [JobsController::class, 'edit'])->name('jobs.edit');
+                        Route::put('job/edit/{id}', [JobsController::class, 'update'])->name('jobs.update');
+                        Route::get('job/show/{id}', [JobsController::class, 'show'])->name('jobs.show');
+                    </div>
+
+                    <h3>Party Management</h3>
+                    <p>Manage business partners, clients, and vendors:</p>
+                    <div class="code-block">
+                        // Party Management Routes
+                        Route::get('parties', [PartiesController::class, 'index'])->name('parties.index');
+                        Route::get('parties/create', [PartiesController::class, 'create'])->name('parties.create');
+                        Route::post('parties/store', [PartiesController::class, 'store'])->name('parties.store');
+                        Route::get('parties/edit/{id}', [PartiesController::class, 'edit'])->name('parties.edit');
+                        Route::put('parties/edit/{id}', [PartiesController::class, 'update'])->name('parties.update');
+                    </div>
+                </section>
+
+                <!-- Financial Management Section -->
+                <section id="financial-management" class="section">
+                    <h2>Financial Management System</h2>
+                    <p>Comprehensive financial tracking, accounting, and ledger management.</p>
+
+                    <h3>Accounting System</h3>
+                    <p>Complete chart of accounts and financial tracking:</p>
+                    <div class="code-block">
+                        // Chart of Accounts
+                        Route::get('chart-of-accounts', [ChartOfAccountController::class,
+                        'index'])->name('chart-of-accounts.index');
+                        Route::get('chart-of-accounts/create', [ChartOfAccountController::class,
+                        'create'])->name('chart-of-accounts.create');
+                        Route::post('chart-of-accounts/store', [ChartOfAccountController::class,
+                        'store'])->name('chart-of-accounts.store');
+
+                        // Bank Accounts
+                        Route::get('bank', [BankController::class, 'index'])->name('banks.index');
+                        Route::get('bank/create', [BankController::class, 'create'])->name('banks.create');
+                        Route::post('bank/store', [BankController::class, 'store'])->name('banks.store');
+                    </div>
+
+                    <h3>Income & Expense Management</h3>
+                    <p>Track all financial transactions with detailed categorization:</p>
+                    <div class="code-block">
+                        // Income Management
+                        Route::get('new-income', [NewIncomeController::class, 'index'])->name('new-income.index');
+                        Route::get('new-income/create', [NewIncomeController::class,
+                        'create'])->name('new-income.create');
+                        Route::post('new-income/store', [NewIncomeController::class,
+                        'store'])->name('new-income.store');
+
+                        // Expense Management
+                        Route::get('new-expense', [NewExpenseController::class, 'index'])->name('new-expense.index');
+                        Route::get('new-expense/create', [NewExpenseController::class,
+                        'create'])->name('new-expense.create');
+                        Route::post('new-expense/store', [NewExpenseController::class,
+                        'store'])->name('new-expense.store');
+                    </div>
+
+                    <h3>Ledger System</h3>
+                    <p>Multiple ledger types for comprehensive financial tracking:</p>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <h4>Cash Ledger</h4>
+                            <p>Track all cash transactions and balances with detailed reporting.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Bank Ledger</h4>
+                            <p>Monitor bank account transactions and reconcile statements.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Employee Ledger</h4>
+                            <p>Track employee financial transactions, advances, and settlements.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Party Ledger</h4>
+                            <p>Manage client/vendor accounts with transaction history.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reporting & Analytics Section -->
+                <section id="reporting-analytics" class="section">
+                    <h2>Reporting & Analytics</h2>
+                    <p>Comprehensive reporting system for business intelligence and decision making.</p>
+
+                    <h3>Financial Reports</h3>
+                    <p>Advanced financial reporting and analysis tools:</p>
+                    <div class="code-block">
+                        // Profit & Loss Report
+                        Route::get('profit-and-loss', [ProfitLossController::class, 'index'])->name('profit-loss');
+                        Route::post('profit-and-loss/get-data', [ProfitLossController::class,
+                        'getData'])->name('profit-loss.get-data');
+
+                        // Cashbook Report
+                        Route::get('cashbook', [CashbookController::class, 'index'])->name('cashbook.index');
+                        Route::post('cashbook/get', [CashbookController::class,
+                        'getCashbookData'])->name('cashbook.get');
+                    </div>
+
+                    <h3>Business Reports</h3>
+                    <p>Operational and business performance reports:</p>
+                    <div class="code-block">
+                        // All Reports Overview
+                        Route::get('all-report', [ReportListController::class, 'index'])->name('all-report');
+
+                        // Commission Reports
+                        Route::get('commissions', [CommissionController::class, 'index'])->name('commission.index');
+                        Route::post('/commission/summary', [CommissionController::class,
+                        'getSummary'])->name('commission.summary');
+                    </div>
+
+                    <h3>Bill Management</h3>
+                    <p>Complete billing and invoice management system:</p>
+                    <div class="code-block">
+                        // Bill Register
+                        Route::get('bill-register', [BillRegisterController::class,
+                        'index'])->name('bill-register.index');
+                        Route::get('bill-register/view/{id}', [BillRegisterController::class,
+                        'showBill'])->name('bill-register.view');
+
+                        // Bill Statement
+                        Route::get('bill-statement', [BillStatementController::class,
+                        'index'])->name('bill-statement.index');
+                        Route::post('bill-statement/update-status', [BillStatementController::class,
+                        'updateStatus'])->name('bill-statement.updateStatus');
+                    </div>
+                </section>
+
+                <!-- Route Structure Section -->
+                <section id="routes" class="section">
+                    <h2>Route Structure</h2>
+                    <p>Understanding the application's route structure and URL patterns.</p>
+
+                    <h3>Route Prefix</h3>
+                    <p>All business management routes are prefixed with <code>/cnf</code> and protected by
+                        authentication:</p>
+                    <div class="code-block">
+                        Route::prefix('cnf')->middleware('auth')->group(function () {
+                        // All CNF routes go here
+                        // Protected by authentication middleware
+                        });
+                    </div>
+
+                    <h3>Route Naming Convention</h3>
+                    <p>Consistent naming pattern for all routes:</p>
+                    <div class="code-block">
+                        // Resource routes follow Laravel conventions
+                        Route::get('resource', [Controller::class, 'index'])->name('resource.index');
+                        Route::get('resource/create', [Controller::class, 'create'])->name('resource.create');
+                        Route::post('resource/store', [Controller::class, 'store'])->name('resource.store');
+                        Route::get('resource/edit/{id}', [Controller::class, 'edit'])->name('resource.edit');
+                        Route::put('resource/edit/{id}', [Controller::class, 'update'])->name('resource.update');
+                        Route::get('resource/show/{id}', [Controller::class, 'show'])->name('resource.show');
+                    </div>
+
+                    <h3>Data Table Routes</h3>
+                    <p>AJAX routes for datatable functionality:</p>
+                    <div class="code-block">
+                        // Most index routes have corresponding get routes for datatables
+                        Route::post('resource/get', [Controller::class, 'get'])->name('resource.get');
+
+                        // Example usage in controllers
+                        public function get(Request $request)
+                        {
+                        return datatables()->of(Resource::query())->toJson();
+                        }
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="section">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <h3>Installation & Setup</h3>
+                    <div class="alert alert-info">
+                        <strong>Q: How do I access the admin panel after installation?</strong><br>
+                        A: Access your application at <code>https://yourdomain.com/cnf</code> and login with the default
+                        admin credentials.
+                    </div>
+
+                    <div class="alert alert-info">
+                        <strong>Q: Can I change the route prefix from '/cnf' to something else?</strong><br>
+                        A: Yes, update the route prefix in your routes file and ensure all links are updated
+                        accordingly.
+                    </div>
+
+                    <h3>User Management</h3>
+                    <div class="alert alert-info">
+                        <strong>Q: How do I create different user roles?</strong><br>
+                        A: Use the Roles section in the admin panel to create new roles and assign specific permissions
+                        to each role.
+                    </div>
+
+                    <div class="alert alert-info">
+                        <strong>Q: Can employees have different access levels?</strong><br>
+                        A: Yes, assign employees to different roles with specific permissions to control their access
+                        levels.
+                    </div>
+
+                    <h3>Financial Management</h3>
+                    <div class="alert alert-info">
+                        <strong>Q: How do I set up the chart of accounts?</strong><br>
+                        A: Use the Chart of Accounts section to create account categories and sub-accounts based on your
+                        business needs.
+                    </div>
+
+                    <div class="alert alert-info">
+                        <strong>Q: Can I track multiple bank accounts?</strong><br>
+                        A: Yes, you can add and manage multiple bank accounts in the Bank Management section.
+                    </div>
+                </section>
+
+                <!-- Support Policy Section -->
+                <section id="support-policy" class="section">
+                    <h2>Support Policy</h2>
+
+                    <h3>What's Included</h3>
+                    <ul>
+                        <li><strong>Installation Support:</strong> Assistance with initial setup and configuration</li>
+                        <li><strong>Bug Fixes:</strong> Resolution of reported issues and errors</li>
+                        <li><strong>Documentation Updates:</strong> Continuous improvement of documentation</li>
+                        <li><strong>Security Updates:</strong> Important security patches and updates</li>
+                        <li><strong>Basic Configuration:</strong> Help with standard configuration options</li>
+                    </ul>
+
+                    <h3>What's Not Included</h3>
+                    <ul>
+                        <li>Custom feature development</li>
+                        <li>Server configuration and management</li>
+                        <li>Major version upgrades</li>
+                        <li>Third-party integration development</li>
+                        <li>Design and UI customization</li>
+                    </ul>
+
+                    <h3>Getting Support</h3>
+                    <p>For support requests, please contact us through:</p>
+                    <ul>
+                        <li><strong>Email:</strong> support@cnflaravel.com</li>
+                        <li><strong>Support Portal:</strong> https://support.cnflaravel.com</li>
+                        <li><strong>Documentation:</strong> Always check this documentation first</li>
+                    </ul>
+
+                    <div class="alert alert-info">
+                        <strong>Response Time:</strong> We typically respond to support requests within 24-48 hours
+                        during business days.
+                    </div>
+                </section>
+
+            </div>
+
+            <footer class="doc-footer">
+                <p>&copy; 2024 CNF Laravel Business Management System. All Rights Reserved. | Documentation Version
+                    2.1.0</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
