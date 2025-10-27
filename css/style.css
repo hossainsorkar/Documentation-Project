@@ -29,6 +29,15 @@ body {
     min-height: 100vh;
 }
 
+.screenshot {
+    max-width: 898px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 25px 0;
+}
+
+
 .documentation-wrapper {
     display: flex;
     min-height: 100vh;
@@ -252,6 +261,17 @@ body {
     margin-bottom: 10px;
     color: var(--gray);
     line-height: 1.6;
+}
+.hash-list {
+    list-style: none; /* remove default bullets */
+    padding-left: 0;  /* remove default padding */
+}
+
+.hash-list li::before {
+    content: "#";
+    margin-right: 10px; 
+    color: var(--primary); 
+    font-weight: bold;  
 }
 
 /* Feature Grid */

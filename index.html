@@ -25,27 +25,45 @@
                     <div class="nav-links">
                         <a href="#introduction" class="active">📋 Introduction</a>
                         <a href="#requirements">⚙️ Requirements</a>
-                        <a href="#rezaul-requirements">⚙️ Rezaul Requirements</a>
                         <a href="#installation">🚀 Installation</a>
                     </div>
                 </div>
 
                 <div class="nav-section">
-                    <div class="nav-section-title">Core Modules</div>
+                    <div class="nav-section-title">Admin Panel</div>
                     <div class="nav-links">
-                        <a href="#user-management">👥 User Management</a>
+                        <!--admin panel based-->
+                        <a href="#Admin-Login">🔑 Admin Login</a>
+                        <a href="#admin-dashboard">📋 Admin Dashboard</a>
                         <a href="#role-permissions">🔐 Roles & Permissions</a>
+                        <a href="#user-management">👥 User Management</a>
+                        <!--
                         <a href="#business-management">🏢 Business Operations</a>
                         <a href="#financial-management">💰 Financial System</a>
                         <a href="#reporting-analytics">📊 Reporting & Analytics</a>
+                        -->
                     </div>
                 </div>
 
                 <div class="nav-section">
+                    <div class="nav-section-title">Agent Panel</div>
+                    <div class="nav-links">
+                        <!--agent panel based-->
+                        <a href="#Agent-Login">🔑 Agent Login</a>
+                        <a href="#Agent-Dashboard">🏠 Agent Dashboard</a>
+                        <a href="#Job-Management">💼 Job Management</a>
+                        <a href="#Employee-Voucher">🧾 Employee Voucher</a>
+                    </div>
+                </div>
+
+
+                <div class="nav-section">
                     <div class="nav-section-title">Configuration</div>
                     <div class="nav-links">
+                        <!--
                         <a href="#environment">🔧 Environment Setup</a>
                         <a href="#database">🗄️ Database Config</a>
+                        -->
                         <a href="#routes">🛣️ Route Structure</a>
                     </div>
                 </div>
@@ -54,7 +72,7 @@
                     <div class="nav-section-title">Support</div>
                     <div class="nav-links">
                         <a href="#faq">❓ FAQ</a>
-                        <a href="#troubleshooting">🔧 Troubleshooting</a>
+                        <!--   <a href="#troubleshooting">🔧 Troubleshooting</a> -->
                         <a href="#support-policy">📞 Support Policy</a>
                     </div>
                 </div>
@@ -101,61 +119,6 @@
                 <!-- Requirements Section -->
                 <section id="requirements" class="section">
                     <h2>System Requirements</h2>
-                    <p>Ensure your hosting environment meets these requirements for optimal performance:</p>
-
-                    <div class="table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Component</th>
-                                    <th>Minimum</th>
-                                    <th>Recommended</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>PHP Version</td>
-                                    <td>7.4+</td>
-                                    <td>8.1+</td>
-                                </tr>
-                                <tr>
-                                    <td>Laravel Framework</td>
-                                    <td>8.0</td>
-                                    <td>9.0+</td>
-                                </tr>
-                                <tr>
-                                    <td>Database</td>
-                                    <td>MySQL 5.7</td>
-                                    <td>MySQL 8.0</td>
-                                </tr>
-                                <tr>
-                                    <td>Web Server</td>
-                                    <td>Apache 2.4 / Nginx 1.18</td>
-                                    <td>Nginx with PHP-FPM</td>
-                                </tr>
-                                <tr>
-                                    <td>Memory</td>
-                                    <td>256MB RAM</td>
-                                    <td>1GB+ RAM</td>
-                                </tr>
-                                <tr>
-                                    <td>PHP Extensions</td>
-                                    <td colspan="2">BCMath, Ctype, JSON, Mbstring, OpenSSL, PDO, Tokenizer, XML, cURL,
-                                        GD Library</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="alert alert-warning">
-                        <strong>Important:</strong> Ensure <code>mod_rewrite</code> is enabled for Apache servers and
-                        proper Nginx configuration for clean URLs.
-                    </div>
-                </section>
-
-                <!-- Requirements Section -->
-                <section id="rezaul-requirements" class="section">
-                    <h2>Rezaul System Requirements</h2>
                     <p>Ensure your hosting environment meets these requirements for optimal performance:</p>
 
                     <div class="table">
@@ -296,93 +259,179 @@
                     </div>
                 </section>
 
-                <!-- User Management Section -->
-                <section id="user-management" class="section">
-                    <h2>User Management System</h2>
-                    <p>Comprehensive user management with multi-level access control for different user types.</p>
+                <!--Admin Login Section-->
+                <section id="Admin-Login" class="section">
+                    <h2>Admin Login Page</h2>
+                    <p>
+                        The Admin Login page allows system administrators to securely access the administrative
+                        dashboard. It offers a clean and intuitive interface designed for quick and secure
+                        authentication, enabling administrators to manage users and monitor system activities.
+                    </p>
 
-                    <h3>Admin User Management</h3>
-                    <p>Manage system administrators with full control over the application:</p>
-                    <div class="code-block">
-                        // Admin User Routes
-                        Route::get('admin-user', [AdminUserController::class, 'index'])->name('admin-user.index');
-                        Route::get('admin-user/create', [AdminUserController::class,
-                        'create'])->name('admin-user.create');
-                        Route::post('admin-user/store', [AdminUserController::class,
-                        'store'])->name('admin-user.store');
-                        Route::get('admin-user/edit/{id}', [AdminUserController::class,
-                        'edit'])->name('admin-user.edit');
-                        Route::put('admin-user/edit/{id}', [AdminUserController::class,
-                        'update'])->name('admin-user.update');
-                        Route::get('admin-user/show/{id}', [AdminUserController::class,
-                        'show'])->name('admin-user.show');
-                    </div>
+                    <h3>Login Process</h3>
+                    <p>To log in as an administrator, the following credentials are required:</p>
+                    <ul>
+                        <li><strong>Email:</strong> Enter the registered admin email address associated with your
+                            account.</li>
+                        <li><strong>Password:</strong> Provide your account password to authenticate and access the
+                            admin
+                            panel.</li>
+                    </ul>
+                    <img src="assets/image/agent login/screencapture-a2zcnfsolution-login-2025-10-27-11_24_27.png"
+                        class="screenshot" alt="">
+                </section>
 
-                    <h3>Employee Management</h3>
-                    <p>Complete employee management system with branch assignment:</p>
-                    <div class="code-block">
-                        // Employee Management Routes
-                        Route::get('employee', [EmployeeController::class, 'index'])->name('employee.index');
-                        Route::get('employee/create', [EmployeeController::class, 'create'])->name('employee.create');
-                        Route::post('employee/store', [EmployeeController::class, 'store'])->name('employee.store');
-                        Route::get('employee/edit/{id}', [EmployeeController::class, 'edit'])->name('employee.edit');
-                        Route::put('employee/edit/{id}', [EmployeeController::class,
-                        'update'])->name('employee.update');
-                        Route::get('employee/show/{id}', [EmployeeController::class, 'show'])->name('employee.show');
-                    </div>
+                <!--Admin Dashboard Section-->
+                <section id="admin-dashboard" class="section">
+                    <h2>Admin Dashboard Overview</h2>
+                    <p>
+                        The Admin Dashboard provides an at-a-glance summary of job statistics, including <strong>Total
+                            Jobs</strong> (overall job count), <strong>Total Initialized</strong> (jobs that have been
+                        created but not yet processed), <strong>Total Processing</strong> (jobs currently in progress),
+                        and <strong>Total Completed</strong> (successfully finished jobs). It also displays daily
+                        metrics such as <strong>Today's Jobs</strong>, <strong>Today's Initialized</strong>,
+                        <strong>Today's
+                            Processing</strong>, and <strong>Today's Completed</strong>, offering administrators
+                        real-time
+                        insights into current operational performance.
+                    </p>
+                    <img src="assets/image/admin dashboard/slide01.png" class="screenshot" alt="">
+                    <p>
+                        The Admin Dashboard also features two insightful charts for performance tracking. The first is a
+                        <strong>Graph Chart</strong> that visualizes the number of jobs created over time, helping
+                        administrators monitor activity trends and workload patterns. The second is a <strong>Bar
+                            Chart</strong> that compares <em>Today's Jobs</em> with the <em>Total Jobs</em> completed so
+                        far, providing a clear snapshot of daily productivity against overall performance.
+                    </p>
+                    <img src="assets/image/admin dashboard/slide02.png" class="screenshot" alt="">
+                    <p>
+                        There’s also a set of four cards showing key metrics:
+                    <ul>
+                        <li><strong>Total Jobs Created:</strong> Displays total jobs with comparison to last month.</li>
+                        <li><strong>Growth Rate:</strong> Shows performance change compared to last week.</li>
+                        <li><strong>Average Completion Time:</strong> Indicates average job completion with
+                            month-over-month insight.</li>
+                        <li><strong>Commission Paid:</strong> Displays total commissions with week-over-week comparison.
+                        </li>
+                    </ul>
+                    </p>
+                    <img src="assets/image/admin dashboard/slide03.png" class="screenshot" alt="">
+                    <p>
+                        The Admin Dashboard also highlights top performers and recent activities across different
+                        categories, providing a clear overview of employee, branch, terminal, and party performance,
+                        along with the most recent jobs processed.
+                    </p>
 
-                    <h3>Profile Management</h3>
-                    <p>Users can manage their profiles and update personal information:</p>
-                    <div class="code-block">
-                        // Profile Management
-                        Route::get('/my-profile', [MyProfileController::class, 'show'])->name('my-profile.show');
-                    </div>
+                    <ul>
+                        <li><strong>Top Employee Performance:</strong> Lists employees with the highest job counts,
+                            showing how many are processing and completed.</li>
+                        <li><strong>Top Branch Performance:</strong> Displays branches ranked by total jobs and their
+                            current processing and completed counts.</li>
+                        <li><strong>Top Terminal Performance:</strong> Highlights terminals with the most activity,
+                            including processing and completed jobs.</li>
+                        <li><strong>Top Party Performance:</strong> Shows parties with the highest job involvement,
+                            along with job status details.</li>
+                        <li><strong>Recent Jobs:</strong> Summarizes the latest jobs processed, including job name,
+                            status, and date.</li>
+                    </ul>
+                    <img src="assets/image/admin dashboard/slide04.png" class="screenshot" alt="">
+
                 </section>
 
                 <!-- Role & Permissions Section -->
                 <section id="role-permissions" class="section">
                     <h2>Roles & Permissions System</h2>
-                    <p>Advanced role-based access control system for secure multi-user management.</p>
+                    <p>
+                        The Roles & Permissions section allows administrators to manage user access and define system
+                        privileges. It consists of two main pages: <strong>Roles</strong> and
+                        <strong>Permissions</strong>.
+                    </p>
 
-                    <h3>Role Management</h3>
-                    <p>Create and manage user roles with specific permissions:</p>
-                    <div class="code-block">
-                        // Role Management Routes
-                        Route::get('roles', [RoleController::class, 'index'])->name('roles');
-                        Route::get('role/create', [RoleController::class, 'create'])->name('roles.create');
-                        Route::post('roles/store', [RoleController::class, 'store'])->name('roles.store');
-                        Route::get('roles/edit/{id}', [RoleController::class, 'edit'])->name('roles.edit');
-                        Route::put('roles/edit/{id}', [RoleController::class, 'update'])->name('roles.update');
-                    </div>
+                    <h3>Roles</h3>
+                    <p>
+                        The Roles page allows administrators to view and manage all existing roles in the system. Each
+                        role defines specific responsibilities and access levels. A dedicated button is available to
+                        navigate to the <em>Create Role</em> page, where new roles can be added.
+                    </p>
+                    <img src="assets/image/roles & permissions/slide01.png" class="screenshot" alt="">
+                    <h4>Create Role Page</h4>
+                    <p>
+                        The Create Role page allows administrators to add new roles and assign specific permissions.
+                        Administrators can select permissions from various modules. A <strong>Check All
+                            Permissions</strong>
+                        option is available for quickly assigning all permissions to a role, ensuring complete access if
+                        required.
+                    </p>
+                    <img src="assets/image/roles & permissions/slide02.png" class="screenshot" alt="">
 
-                    <h3>Permission Management</h3>
-                    <p>Define granular permissions and assign them to roles:</p>
-                    <div class="code-block">
-                        // Permission Management Routes
-                        Route::get('permissions', [PermissionsController::class, 'index'])->name('permissions');
-                        Route::get('permission/create', [PermissionsController::class,
-                        'create'])->name('permissions.create');
-                        Route::post('permissions/store', [PermissionsController::class,
-                        'store'])->name('permissions.store');
-                        Route::get('permissions/edit/{id}', [PermissionsController::class,
-                        'edit'])->name('permissions.edit');
-                        Route::put('permissions/edit/{id}', [PermissionsController::class,
-                        'update'])->name('permissions.update');
-                    </div>
+                    <h3>Permissions</h3>
+                    <p>
+                        The Permissions page allows administrators to view and manage all system permissions. Each
+                        permission defines a specific action that can be assigned to roles, controlling what users with
+                        those roles are allowed to do within the system. A button is provided to navigate to the
+                        <em>Create Permission</em> page for adding new permissions.
+                    </p>
+                    <img src="assets/image/roles & permissions/slide03.png" class="screenshot" alt="">
 
-                    <h3>Access Control Features</h3>
-                    <ul>
-                        <li><strong>Granular Permissions:</strong> Control access to individual features and actions
-                        </li>
-                        <li><strong>Role Assignment:</strong> Assign users to specific roles with predefined permissions
-                        </li>
-                        <li><strong>Middleware Protection:</strong> Automatic access control on all protected routes
-                        </li>
-                        <li><strong>Audit Logging:</strong> Track all user activities and permission changes</li>
-                    </ul>
+                    <h4>Create Permission Page</h4>
+                    <p>
+                        The Create Permission page enables administrators to add new permissions to the system.
+                        Administrators can define the permission name, description from here on.
+                    </p>
+                    <img src="assets/image/roles & permissions/slide04.png" class="screenshot" alt="">
                 </section>
 
-                <!-- Business Management Section -->
+                <!-- User Management Section -->
+                <section id="user-management" class="section">
+                    <h2 id="user-management">User Management</h2>
+                    <p>
+                        The User Management module lets administrators manage all users, including admins and employees.
+                        It supports <u>creating, editing, and deactivating accounts</u>, <u>assigning roles</u>, and
+                        <u>monitoring user activity</u> for secure and efficient operations.
+                    </p>
+
+                    <h3>Admin Management</h3>
+                    <p>Manage system administrators with full control over the application. This includes viewing the
+                        <strong>Admin List</strong> and adding new admins through the <strong>Create Admin</strong>
+                        page.
+                    </p>
+                    <img src="assets/image/user management/slide01.png" class="screenshot" alt="">
+                    <p>
+                        Within the Admin List page, administrators can search for admins using <strong>From
+                            Date</strong> and <strong>To Date</strong> filters. The admin table includes columns such as
+                        <strong>SL</strong>, <strong>First Name</strong>, <strong>Last Name</strong>,
+                        <strong>Email</strong>, <strong>User Role</strong>, <strong>Department</strong>, etc.
+                        Additionally, pagination and search options are available for easier navigation, along with the
+                        ability to enable or disable user accounts.
+                    </p>
+
+
+                    <h4>Create Admin Page</h4>
+                    <p>The Create Admin page allows administrators to add new admin accounts, assign roles, and
+                        configure permissions for full system access.</p>
+                    <img src="assets/image/user management/slide02.png" class="screenshot" alt="">
+
+                    <h3>Employee Management</h3>
+                    <p>Complete employee management system, including branch assignments. Administrators can view all
+                        employees in the <strong>Employee List</strong> and add new employees through the <strong>Create
+                            Employee</strong> page.</p>
+                    <img src="assets/image/user management/slide03.png" class="screenshot" alt="">
+                    <p>
+                        Within the Employee List page, administrators can filter employees using <strong>From
+                            Date</strong> and <strong>To Date</strong> to quickly find specific records. The employee
+                        table includes columns such as <strong>SL</strong>, <strong>First Name</strong>, <strong>Last
+                            Name</strong>, <strong>Email</strong>, <strong>User Role</strong>,
+                        <strong>Department</strong>, <strong>Can Login</strong>, <strong>Action</strong>,
+                        <strong>Created By</strong>, and <strong>Create Date</strong>. Pagination and search features
+                        are also provided for easier navigation and management.
+                    </p>
+                    <h4>Create Employee Page</h4>
+                    <p>The Create Employee page enables adding new employee accounts, assigning roles, and linking them
+                        to specific branches for effective operational management.</p>
+                    <img src="assets/image/user management/slide04.png" class="screenshot" alt="">
+                </section>
+
+                <!-- Business Management Section 
                 <section id="business-management" class="section">
                     <h2>Business Operations Management</h2>
                     <p>Complete suite for managing daily business operations including branches, terminals, and jobs.
@@ -434,8 +483,10 @@
                         Route::put('parties/edit/{id}', [PartiesController::class, 'update'])->name('parties.update');
                     </div>
                 </section>
+                -->
 
-                <!-- Financial Management Section -->
+
+                <!-- Financial Management Section 
                 <section id="financial-management" class="section">
                     <h2>Financial Management System</h2>
                     <p>Comprehensive financial tracking, accounting, and ledger management.</p>
@@ -496,8 +547,10 @@
                         </div>
                     </div>
                 </section>
+                -->
 
-                <!-- Reporting & Analytics Section -->
+
+                <!-- Reporting & Analytics Section 
                 <section id="reporting-analytics" class="section">
                     <h2>Reporting & Analytics</h2>
                     <p>Comprehensive reporting system for business intelligence and decision making.</p>
@@ -543,6 +596,168 @@
                         Route::post('bill-statement/update-status', [BillStatementController::class,
                         'updateStatus'])->name('bill-statement.updateStatus');
                     </div>
+                </section>
+                -->
+
+
+                <!-- Agent-Login Section -->
+                <section id="Agent-Login" class="section">
+                    <h2>Agent Login Page</h2>
+                    <p>The Agent Login page enables agents to securely access their personalized dashboards. It provides
+                        a clean and intuitive interface for entering credentials and managing jobs and transactions
+                        efficiently.</p>
+
+                    <h3>Login Process</h3>
+                    <p>To log in as an agent, the following credentials are required:</p>
+                    <ul>
+                        <li><strong>Email:</strong> Enter your registered email address to identify your account.</li>
+                        <li><strong>Password:</strong> Provide your secure password to gain access to the dashboard.
+                        </li>
+                    </ul>
+                    <img src="assets/image/agent login/screencapture-a2zcnfsolution-login-2025-10-27-11_24_27.png"
+                        alt="Agent Login Page Screenshot" class="screenshot">
+                </section>
+
+                <!-- Agent-Dashboard Section -->
+                <section id="Agent-Dashboard" class="section">
+                    <h2>Agent Dashboard Overview</h2>
+                    <p>The Agent Dashboard provides a comprehensive overview of daily activities and job performance.
+                        Agents can track total, initialized, processing, and completed jobs for the day. It also
+                        includes interactive line and bar charts displaying job trends, along with a table listing
+                        recent jobs, their status, and creation dates.</p>
+
+                    <h3>Features</h3>
+                    <ul>
+                        <li><strong>Today's Total Jobs:</strong> Displays the number of jobs created by the agent today
+                            for quick workload assessment.</li>
+                        <li><strong>Today's Initialized Jobs:</strong> Shows jobs that have been started but not yet
+                            fully processed, helping prioritize pending work.</li>
+                        <li><strong>Today's Processing Jobs:</strong> Lists all jobs currently in progress, offering
+                            clear insight into active operations.</li>
+                        <li><strong>Today's Completed Jobs:</strong> Highlights jobs completed today, helping agents
+                            track task completion and productivity.</li>
+                        <li><strong>Job Creation Over Time (Line Chart):</strong> Displays job creation trends, enabling
+                            performance analysis over time.</li>
+                        <li><strong>Job Summary (Bar Chart):</strong> Compares today’s jobs with total completed jobs,
+                            giving a quick overview of workflow progress.</li>
+                        <li><strong>Recent Jobs Table:</strong> Lists recently created jobs with details like Job No,
+                            Status, and Creation Date for easy reference.</li>
+                    </ul>
+                    <img src="assets/image/agent dahsboard/screencapture-a2zcnfsolution-cnf-dashboard-2025-10-27-11_53_00.png"
+                        class="screenshot" alt="Agent Dashboard Screenshot">
+
+                    <ul class="hash-list">
+                        <li><strong>Top Cards:</strong> Summarize today’s job counts—created, initialized, processing,
+                            and completed.</li>
+                        <li><strong>Charts:</strong> Visualize job creation trends and performance comparisons.</li>
+                        <li><strong>Recent Jobs Table:</strong> Displays job data with easy access to status tracking.
+                        </li>
+                    </ul>
+
+                    <div class="alert alert-info">
+                        <strong>Note:</strong> All dashboard data updates in real-time, ensuring agents always view the
+                        latest information.
+                    </div>
+                </section>
+
+                <!-- Job-Management Section -->
+                <section id="Job-Management" class="section">
+                    <h2>Jobs Management</h2>
+                    <p>The Job Management section provides agents with tools to create, monitor, and manage all jobs
+                        efficiently. It integrates job creation and listing functionalities for smooth workflow control
+                        and accurate record keeping.</p>
+
+                    <h3>Job Listing Page</h3>
+                    <p>The Jobs page gives agents a centralized view of all existing jobs. Users can apply filters
+                        through the collapsible filter panel or add new jobs using the “Add Job” button. Below these
+                        options lies a dynamic table presenting all job records for easy tracking and management.</p>
+                    <img src="assets/image/job management/screencapture-a2zcnfsolution-cnf-jobs-2025-10-27-12_27_56.png"
+                        class="screenshot" alt="Jobs Listing Page Screenshot">
+
+                    <h4>Page Features</h4>
+                    <p>The Jobs page includes key tools for efficient management—filtering, job creation, and detailed
+                        record viewing—all designed for streamlined workflow handling.</p>
+
+                    <ul>
+                        <li>
+                            <strong>Filter Panel:</strong> Enables agents to refine job results based on various
+                            criteria. The collapsible panel saves screen space when not in use.
+                            <ul class="hash-list">
+                                <li><strong>Parties:</strong> Displays available parties associated with jobs.</li>
+                                <li><strong>Terminal:</strong> Filters jobs by the terminal involved.</li>
+                                <li><strong>Job Type:</strong> Filters based on job category.</li>
+                                <li><strong>Job Status:</strong> Narrows jobs by their current status (e.g., Pending,
+                                    Processing).</li>
+                                <li><strong>From Date / To Date (Created Date):</strong> Sets date ranges for job
+                                    filtering.</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Add Job Button:</strong> Redirects users to the Job Creation page, allowing new jobs
+                            to be added instantly.</li>
+
+                        <li>
+                            <strong>Jobs Table:</strong> Displays all job entries in a structured table format with
+                            actionable controls.
+                            <ul class="hash-list">
+                                <li><strong>SL:</strong> Serial number for each entry.</li>
+                                <li><strong>Action:</strong> Edit, view, or delete job entries.</li>
+                                <li><strong>Job No / Bill No / Invoice No / B/E No:</strong> Unique identifiers and
+                                    related billing references.</li>
+                                <li><strong>Status / Type:</strong> Displays job state and category.</li>
+                                <li><strong>Party / Employee / Terminal:</strong> Shows associated party, assigned
+                                    agent, and terminal used.</li>
+                                <li><strong>Updated By / Last Update / Create Date:</strong> Tracks change history and
+                                    job creation date.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="alert alert-info">
+                        <strong>Note:</strong> The table includes pagination and entry display controls such as “Show 10
+                        entries,” a search bar, and “Previous” / “Next” navigation for browsing job records.
+                    </div>
+
+                    <h3>Job Creation Page</h3>
+                    <p>The Job Creation page allows agents to register new jobs by providing all required details. It
+                        can be accessed directly from the “Add Job” button on the Jobs page, ensuring a seamless
+                        workflow for job entry and management.</p>
+                    <img src="assets/image/job management/screencapture-a2zcnfsolution-cnf-job-create-2025-10-27-12_47_49.png"
+                        class="screenshot" alt="Job Creation Page Screenshot">
+                </section>
+
+                <!-- Employee-Voucher Section -->
+                <section id="Employee-Voucher" class="section">
+                    <h2>Employee Voucher</h2>
+                    <p>The Employee Voucher page allows agents to manage vouchers efficiently. Users can filter vouchers
+                        by year or month, add new vouchers, and view key financial summaries such as total voucher
+                        amount, total received, and current balance. Two charts visually display total received vouchers
+                        and overall voucher distribution.</p>
+                    <img src="assets/image/employee voucher/screencapture-a2zcnfsolution-cnf-employee-voucher-2025-10-27-13_19_03.png"
+                        class="screenshot" alt="Employee Voucher Page Screenshot">
+
+                    <h3>Page Features</h3>
+                    <ul>
+                        <li><strong>Filter Panel:</strong> Enables voucher filtering by year or month for quick record
+                            retrieval.</li>
+                        <li><strong>Add Voucher:</strong> Opens a popup form to create a new voucher with fields for
+                            <strong>Voucher Type</strong>, <strong>Voucher Amount</strong>, and <strong>Voucher
+                                Date</strong>, allowing instant entry without leaving the page.
+                        </li>
+                        <li><strong>Voucher Summary:</strong> Displays total vouchers, total received, and real-time
+                            balance—indicating whether it is positive or negative.</li>
+                        <li><strong>Charts:</strong> Presents visual insights through two charts: one for total received
+                            vouchers and another summarizing all voucher data.</li>
+                    </ul>
+
+                    <h4>Voucher List Page</h4>
+                    <p>The Voucher List page provides a comprehensive table of all vouchers for easy monitoring and
+                        management. Agents can filter by voucher type, date range, and view essential information
+                        including serial number, employee, voucher type, name, bill number, amount, voucher date, last
+                        update, and creation date. Pagination, search, and display controls help users navigate records
+                        effortlessly.</p>
+                    <img src="assets/image/employee voucher/screencapture-a2zcnfsolution-cnf-employee-voucher-list-2025-10-27-13_45_21.png"
+                        class="screenshot" alt="Voucher List Page Screenshot">
                 </section>
 
                 <!-- Route Structure Section -->
