@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNF Laravel - Complete Documentation | Business Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -13,6 +16,8 @@
 
     <div class="documentation-wrapper">
         <!-- Sidebar Navigation -->
+
+        You said:
         <nav class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <h2>CNF Laravel</h2>
@@ -37,6 +42,14 @@
                         <a href="#admin-dashboard">📋 Admin Dashboard</a>
                         <a href="#role-permissions">🔐 Roles & Permissions</a>
                         <a href="#user-management">👥 User Management</a>
+                        <a href="#terminals">✈️ Terminals</a>
+                        <a href="#parties">🤝 Parties</a>
+                        <a href="#jobs">🧰 Jobs Module</a>
+                        <a href="#bills">💸 Bills</a>
+                        <a href="#accounts">📒 Accounts</a>
+                        <a href="#reports">📊 Reports</a>
+                        <a href="#employee-voucher">💳 Employee Voucher</a>
+                        <a href="#settings">⚙️ Settings</a>
                         <!--
                         <a href="#business-management">🏢 Business Operations</a>
                         <a href="#financial-management">💰 Financial System</a>
@@ -277,7 +290,7 @@
                             admin
                             panel.</li>
                     </ul>
-                    <img src="assets/image/agent login/screencapture-a2zcnfsolution-login-2025-10-27-11_24_27.png"
+                    <img src="assets/image/agent login/screencapture-a2zcnfsolution-login-2025-10-29-11_49_40.png"
                         class="screenshot" alt="">
                 </section>
 
@@ -350,8 +363,8 @@
                     <h3>Roles</h3>
                     <p>
                         The Roles page allows administrators to view and manage all existing roles in the system. Each
-                        role defines specific responsibilities and access levels. A dedicated button is available to
-                        navigate to the <em>Create Role</em> page, where new roles can be added.
+                        role defines specific responsibilities and access levels.To navigate to the <em>Create Role</em>
+                        page, where new roles can be added use the <u>Create Role</u> button.
                     </p>
                     <img src="assets/image/roles & permissions/slide01.png" class="screenshot" alt="">
                     <h4>Create Role Page</h4>
@@ -429,6 +442,1288 @@
                     <p>The Create Employee page enables adding new employee accounts, assigning roles, and linking them
                         to specific branches for effective operational management.</p>
                     <img src="assets/image/user management/slide04.png" class="screenshot" alt="">
+
+                    <h3>Branch Management</h3>
+                    <p>The Branch Management section allows administrators to assign specific branches to employees,
+                        facilitating organized operations across different locations. ensuring employees are properly
+                        allocated for efficient workflow management.</p>
+                    <img src="assets/image/user management/slide05.png" class="screenshot" alt="">
+                    <p>
+                        The Branch Management table displays all existing branches in a structured format, allowing
+                        administrators to view, edit, or assign them to employees as needed. Each column provides
+                        essential details about the branch and its operational information.
+                    </p>
+                    <strong>Branch Table:</strong> Displays all branch entries in a clear and organized layout with
+                    actionable controls.
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Serial number for each branch entry.</li>
+                        <li><strong>Action:</strong> Edit, view, or delete branch entries.</li>
+                        <li><strong>Name:</strong> Full name of the branch.</li>
+                        <li><strong>Division Name:</strong> The division or region the branch belongs to, helping
+                            categorize operational areas.</li>
+                        <li><strong>Status:</strong> Indicates whether the branch is currently active or inactive.</li>
+                        <li><strong>Create Date:</strong> The date when the branch record was created.</li>
+                    </ul>
+                    <h4>Branch Creation</h4>
+                    <img src="assets/image/user management/slide06.png" class="screenshot" alt="">
+                    <div class="alert alert-info">
+                        <strong>Note:</strong> Clicking the "Create Branch" button redirects administrators to the
+                        Branch Creation Page, where new branches can be added quickly. Once a branch is created, it
+                        becomes available for assignment to employees and can be managed directly from the Branch
+                        Management table.
+                    </div>
+                </section>
+                <!-- Terminals Section -->
+                <section id="terminals" class="section">
+                    <h2>Terminals</h2>
+                    <p>In the context of the C&F business, terminals refer to docks, airports, or other designated
+                        locations where goods are received, dispatched, or transferred. These locations serve as
+                        operational hubs for managing imports, exports, and domestic shipments efficiently.</p>
+                    <h3>Terminal Overview – List Page</h3>
+                    <p>
+                        The Terminal Overview – List Page displays all terminals in a structured table format, allowing
+                        administrators to view and manage operational locations efficiently. Administrators can navigate
+                        through multiple entries using pagination controls and quickly find specific terminals using
+                        the search feature. The page also allows selecting the number of entries displayed per page.
+                    </p>
+                    <p>
+                        The table includes columns for SL, Action, Terminal Name, Terminal Short Name, Terminal Type,
+                        Address, About, and Status.
+                    </p>
+                    <img src="assets/image/terminals/slide01.png" class="screenshot" alt="">
+                    <strong>Terminals Table:</strong> Displays all terminals in a structured table format with
+                    actionable controls.
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Serial number for each terminal entry.</li>
+                        <li><strong>Action:</strong> Edit, view, or delete terminal entries.</li>
+                        <li><strong>Terminal Name:</strong> Full name of the terminal.</li>
+                        <li><strong>Terminal Short Name:</strong> Abbreviated name or code for the terminal.</li>
+                        <li><strong>Terminal Type:</strong> Indicates whether the terminal is export or import type.
+                        </li>
+                        <li><strong>Address:</strong> Physical location or address of the terminal.</li>
+                        <li><strong>About:</strong> Additional notes or description about the terminal.</li>
+                        <li><strong>Status:</strong> Shows whether the terminal is active or inactive.</li>
+                    </ul>
+                    <div class="alert alert-info">
+                        <strong>Note:</strong> A "Create Terminal" button is also provided for quick access
+                        to the Terminal Overview – Creation Page, allowing new terminals to be added seamlessly.
+                    </div>
+                    <h3>Terminal Overview – Creation Page</h3>
+                    <p>The Terminal Overview – Creation Page allows administrators to add new terminals to the system,
+                        enabling smooth management of operational locations across regions. This page is designed to
+                        make terminal creation quick and intuitive.</p>
+                    <img src="assets/image/terminals/slide02.png" class="screenshot" alt="">
+                    <p>The main content of this page is a form used to create a new terminal. Administrators can fill in
+                        details such as the terminal name, short name, type <u>(export, import or both.)</u>, address,
+                        and
+                        additional notes. Once submitted, the new terminal is automatically added to the Terminal
+                        Overview – List Page for further management.</p>
+                    <h3>Expense Fields</h3>
+                    <p>The Terminal Expense List page provides a comprehensive overview of expenses associated with each
+                        terminal. Key details such as the terminal name, expense type, and the user responsible for
+                        recording the entry are highlighted. Administrators can easily review, track, and manage these
+                        expenses directly from the table.</p>
+                    <img src="assets/image/terminals/slide03.png" class="screenshot" alt="">
+                    <p>The table contains the following columns, each representing specific details about terminal
+                        expenses:</p>
+                    <ul>
+                        <li><strong>SL:</strong> Serial number of each entry for easy reference.</li>
+                        <li><strong>Action:</strong> Options to edit, view, or delete a terminal expense entry.</li>
+                        <li><strong>Terminal Name:</strong> The name of the terminal where the expense is recorded.</li>
+                        <li><strong>Expense Type:</strong> The category or type of expense associated with the terminal,
+                            e.g., export or import.
+                        </li>
+                        <li><strong>Commission Rate:</strong> The percentage of commission applied for this expense
+                            type.</li>
+                        <li><strong>Min Commission:</strong> The minimum commission amount that can be applied.</li>
+                        <li><strong>Max Commission:</strong> The maximum commission amount that can be applied.</li>
+                        <li><strong>Created By:</strong> Name of the user who added or recorded this expense entry.</li>
+                        <li><strong>Status:</strong> Current status of the expense entry, e.g., active or inactive.</li>
+                    </ul>
+                    <img src="assets/image/terminals/slide04.png" class="screenshot" alt="">
+                    <h4>Create Expense Page</h4>
+                    <p>This page lets administrators efficiently add new terminal expense entries by specifying details
+                        such as expense type, commission rate, and limits. Admins can also directly add new job expense
+                        fields from the Create Expense page as well.</p>
+                </section>
+                <!-- Parties Section -->
+                <section id="parties" class="section">
+                    <h2>Parties</h2>
+                    <p>In the C&F business, parties refer to the clients for whom goods are handled, whether for import,
+                        export, or domestic shipments.parties are the central part of business operations.</p>
+
+                    <h3>Party Overview – List Page</h3>
+                    <p>The Party Overview – List Page displays all parties in a structured table format, allowing
+                        administrators to view and manage client information efficiently. Administrators can navigate
+                        through multiple entries using pagination controls and quickly locate specific parties using the
+                        search feature. The page also allows selecting the number of entries displayed per page.</p>
+
+                    <img src="assets/image/parties/slide01.png" class="screenshot" alt="">
+                    <p>
+                        The table includes columns for SL, Action, Name, Email, Address, Balance, Status, Created By,
+                        and Created At.
+                    </p>
+                    <strong>Parties Table:</strong> Displays all parties in a structured table format with
+                    actionable
+                    controls.
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Serial number for each party entry.</li>
+                        <li><strong>Action:</strong> Edit, view, or delete party entries.</li>
+                        <li><strong>Name:</strong> Full name of the party or client.</li>
+                        <li><strong>Email:</strong> Contact email for the party.</li>
+                        <li><strong>Address:</strong> Physical or billing address of the party.</li>
+                        <li><strong>Balance:</strong> Current account balance for the party.</li>
+                        <li><strong>Status:</strong> Indicates whether the party is active or inactive.</li>
+                        <li><strong>Created By:</strong> Administrator who added the party to the system.</li>
+                        <li><strong>Created At:</strong> Date and time when the party was created.</li>
+                    </ul>
+
+                    <div class="alert alert-info">
+                        <strong>Note:</strong> A "Create Party" button is also provided for quick access to the Party
+                        Overview – Creation Page, allowing new parties to be added seamlessly.
+                    </div>
+
+                    <h3>Party Overview – Creation Page</h3>
+                    <p>The Party Overview – Creation Page allows administrators to add new parties to the system,
+                        enabling efficient client management and assignment of employees to terminals. This page is
+                        designed to make party creation straightforward and intuitive.</p>
+
+                    <img src="assets/image/parties/slide02.png" class="screenshot" alt="">
+
+                    <p>The main content of this page is a form used to create a new party. Administrators can fill in
+                        details such as the party name, email, address, initial balance, and additional notes. Once
+                        submitted, the new party is automatically added to the Party Overview – List Page for further
+                        management and tracking.</p>
+                </section>
+                <!-- Jobs Section -->
+                <section id="jobs" class="section">
+                    <h2>Job Lists</h2>
+                    <p>The Job List page allows administrators to create and manage tasks that can be assigned to
+                        employees. It provides a centralized view of all jobs, their status, and assigned employees.
+                    </p>
+                    <img src="assets/image/jobs/slide01.png" class="screenshot" alt="">
+                    <p>The Job List table provides a comprehensive view of all jobs, offering pagination, search
+                        functionality, and the option to select the number of entries displayed. This allows
+                        administrators to effectively monitor, filter, and manage job records.</p>
+
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Serial number indicating the order of each job in the table.</li>
+                        <li><strong>Action:</strong> Options to view, edit, or delete the job entry.</li>
+                        <li><strong>Job Status:</strong> Current status of the job, such as pending, in progress, or
+                            completed.</li>
+                        <li><strong>Job No:</strong> Unique identifier assigned to each job for reference.</li>
+                        <li><strong>Bill No:</strong> Number associated with the billing document for the job.</li>
+                        <li><strong>Invoice No:</strong> Invoice number linked to the job for accounting purposes.</li>
+                        <li><strong>B/E No:</strong> Bill of Entry number relevant to import/export jobs.</li>
+                        <li><strong>Status:</strong> Overall status of the job including approval or verification
+                            stages.</li>
+                        <li><strong>Type:</strong> Category or type of job, such as import, export or local.</li>
+                        <li><strong>Party Name:</strong> Name of the client, vendor, or associated party for the job.
+                        </li>
+                        <li><strong>Employee Name:</strong> Name of the employee assigned to the job.</li>
+                        <li><strong>Terminal:</strong> The terminal or location where the job is processed.</li>
+                        <li><strong>Total Job Expense:</strong> Total costs incurred to complete the job.</li>
+                        <li><strong>VAT:</strong> Value-added tax applicable to the job.</li>
+                        <li><strong>Commission:</strong> Commission earned by the employee or agent for this job.</li>
+                        <li><strong>Total Bill Amount:</strong> Final billed amount including expenses, VAT, and
+                            commission.</li>
+                        <li><strong>Job Profit:</strong> Profit generated from the job after deducting costs.</li>
+                        <li><strong>Remarks:</strong> Additional notes or comments regarding the job.</li>
+                        <li><strong>Bill Date:</strong> Date when the bill for the job was generated.</li>
+                        <li><strong>Updated By:</strong> Name of the administrator or employee who last modified the
+                            job.</li>
+                        <li><strong>Last Update:</strong> Date and time when the job record was last updated.</li>
+                        <li><strong>Create Date:</strong> Date when the job was initially created in the system.</li>
+                    </ul>
+                    <img src="assets/image/jobs/slide02.png" class="screenshot" alt="">
+                    <p>The filter option allows administrators to quickly narrow down jobs based on key criteria,
+                        including <strong>Employee</strong>, <strong>Party</strong>, <strong>Terminal</strong>,
+                        <strong>Job Type</strong>, and <strong>Job Status</strong>. Additionally, jobs can be filtered
+                        by a date range using the <strong>From Date</strong> and <strong>To Date</strong> fields. This
+                        functionality helps streamline job
+                        management and locate specific records efficiently.
+                    </p>
+                    <p>Clicking the <strong>Create Job</strong> button allows administrators to add a new job.</p>
+                    <img src="assets/image/jobs/slide03.png" class="screenshot" alt="">
+                    <h3>Add Jobs</h3>
+                    <p>On the Add Job page, administrators can create new jobs by completing the provided form. The
+                        form captures all relevant details such as job type, assigned employee, terminal, and associated
+                        parties. Once submitted, the job is added to the Job List for tracking and management.</p>
+                </section>
+
+                <section id="bills" class="section">
+                    <h2>Bills Management</h2>
+                    <p>
+                        Bill Management refers to the process of creating, organizing, and tracking all bills generated
+                        for completed jobs. These bills are financial records created for jobs assigned to employees and
+                        completed for specific parties (clients), documenting services provided, charges, and
+                        responsible employees. Bill Management provides administrators with tools to modify, print, and
+                        manage bills
+                        efficiently.
+                    </p>
+                    <h3>BIll Register</h3>
+                    <p>
+                        The Bill Register page features a comprehensive table displaying all generated bills, equipped
+                        with search functionality, pagination, and an option to set the number of entries shown per
+                        page.
+                    </p>
+                    <img src="assets/image/bills/slide01.png" class="screenshot" alt="">
+                    <p>
+                        The table contains the following columns, each representing specific billing details:
+                    </p>
+                    <ul>
+                        <li><strong>Action:</strong> Provides options to print or modify existing bills.</li>
+                        <li><strong>SL:</strong> Serial number of each bill entry for easy reference.</li>
+                        <li><strong>Bill Date:</strong> The date when the bill was created or issued.</li>
+                        <li><strong>Bill No:</strong> Unique identification number assigned to each bill.</li>
+                        <li><strong>Type:</strong> Specifies the type or category of the bill.</li>
+                        <li><strong>Party Name:</strong> The name of the client (party) for whom the bill was generated.
+                        </li>
+                        <li><strong>Total Bill Amount:</strong> The total amount charged for the completed job.</li>
+                        <li><strong>Received Amount:</strong> The amount that has been paid or received against the
+                            bill.</li>
+                        <li><strong>Due (Balance):</strong> The remaining unpaid balance on the bill.</li>
+                        <li><strong>Remarks:</strong> Additional notes or comments related to the bill.</li>
+                    </ul>
+                    <p>
+                        The <strong>Action</strong> column plays a crucial role, allowing administrators to <u>print
+                            bills directly</u> or <u>modify existing records</u> when updates or corrections are needed.
+                        This ensures efficient bill management and up-to-date financial accuracy.
+                    </p>
+                    <img src="assets/image/bills/modify bill.png" class="screenshot" alt="">
+                    <p>
+                        Clicking the <strong>Modify Bill</strong> button redirects users to the <em>Bill Modify
+                            Page</em>, where existing bill details can be reviewed and updated as necessary. On this
+                        page, administrators can also <u>add new expense fields</u>, allowing for greater flexibility in
+                        managing and refining billing information.
+                    </p>
+                    <img src="assets/image/bills/bill document.png" class="screenshot" alt="">
+                    <p>
+                        Clicking the <strong>Print Bill</strong> button redirects users to a dedicated <em>Bill Preview
+                            Page</em>, where the selected bill is displayed in a structured document format. From this
+                        page, administrators can easily <u>download the bill as a PDF file</u> for record-keeping,
+                        sharing, or printing purposes.
+                    </p>
+                    <h3>Bill Statement</h3>
+                    <p>
+                        The Bill Statement page provides a categorized and summarized view of bills, grouping them under
+                        their respective
+                        parties (clients). It allows administrators to review, filter, and manage multiple job-related
+                        bills in one place.
+                        The page includes advanced filter options and organized presentation for quick access to grouped
+                        billing data.
+                    </p>
+
+                    <img src="assets/image/bills/slide01.png" class="screenshot" alt="">
+
+                    <p>
+                        The table contains the following columns, each representing key information for grouped billing
+                        statements:
+                    </p>
+
+                    <ul>
+                        <li><strong>SL:</strong> Serial number for each statement entry.</li>
+                        <li><strong>Action:</strong> Provides options to print statements or view detailed job records
+                            under a party.</li>
+                        <li><strong>Status:</strong> Displays the current processing or completion status of the
+                            statement.</li>
+                        <li><strong>Party Name:</strong> The name of the client (party) whose grouped job bills are
+                            recorded.</li>
+                        <li><strong>Job Number:</strong> The unique identification number of the associated job(s).</li>
+                        <li><strong>Total Amount:</strong> The total billed amount for all jobs under the selected
+                            party.</li>
+                        <li><strong>Start:</strong> Indicates the start date of the job period included in the
+                            statement.</li>
+                        <li><strong>End:</strong> Indicates the end date of the job period included in the statement.
+                        </li>
+                        <li><strong>Job Type:</strong> Specifies the type or category of jobs covered in the statement.
+                        </li>
+                        <li><strong>Created Date:</strong> The date when the statement was generated or recorded.</li>
+                    </ul>
+
+                    <p>
+                        The <strong>Action</strong> column on this page provides multiple utilities — administrators can
+                        <u>print individual
+                            statements</u> or <u>print all bills recorded under a specific party</u> in a single batch.
+                        Additionally, users can
+                        <u>view all job records</u> listed under a particular party category in a structured table
+                        format for better review
+                        and verification.
+                    </p>
+
+                    <img src="assets/image/bills/slide02.png" class="screenshot" alt="">
+
+                    <p>
+                        The Bill Statement page also includes a powerful <strong>Filter Option</strong> to streamline
+                        data viewing. Filters
+                        allow administrators to narrow down records based on selected <u>Parties</u>, <u>Job Types</u>,
+                        and <u>Created Date
+                            ranges</u> (using “From Date” and “To Date”). This ensures precise data retrieval and
+                        efficient statement management.
+                    </p>
+
+                    <h4>Difference Between Bill Register and Bill Statement</h4>
+                    <p>
+                        The <strong>Bill Register</strong> displays all bills <u>individually</u>, allowing for detailed
+                        inspection and <strong>printing of each separate bill</strong>.
+                        In contrast, the <strong>Bill Statement</strong> consolidates bills under their respective
+                        <em>parties (clients)</em>, enabling <strong>grouped viewing</strong> and <strong>bulk
+                            printing</strong>.
+                        In summary, the <strong>Register page</strong> focuses on <u>individual job-level billing
+                            records</u>, while the <strong>Statement page</strong> emphasizes <u>party-level billing
+                            summaries</u>.
+                    </p>
+                </section>
+
+                <section id="accounts" class="section">
+                    <h2>Accounting Records</h2>
+                    <p>
+                        The <strong>Accounts Records</strong> section provides a complete view of the company's
+                        <em>financial activities</em>, including the <strong>Bank Account</strong>, client and employee
+                        accounts, and detailed <strong>Charts of Accounts</strong>. Separate pages for <u>Income</u> and
+                        <u>Expenses</u> allow focused tracking of individual transactions. It also maintains
+                        <strong>Cashbook</strong> entries and <strong>Commissions Records</strong> for all clients. Key
+                        financial metrics such as <strong>Total Commission</strong>, <strong>Total Job Expense</strong>,
+                        <strong>Total Voucher</strong>, <strong>Total VAT</strong>, <strong>Total Audit Amount</strong>,
+                        <strong>Total Bill Amount</strong>, and <strong>Total Profit</strong> are clearly displayed for
+                        quick reference.
+                    </p>
+                    <h3>Bank Accounts</h3>
+                    <p>
+                        The <strong>Bank Accounts</strong> section lists all accounts held in the company's own name.
+                        Each account includes essential details such as the bank name, branch, and account information.
+                        This page provides a clear overview of the company's personal accounts for easy monitoring and
+                        management.
+                    </p>
+                    <img src="assets/image/accounts/bank account/slide01.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Bank Accounts</strong> page displays all company bank accounts in a tabular format,
+                        equipped with <em>search</em> and <em>pagination</em> features, along with an option to select
+                        the number of entries per page for easy navigation and management.
+                    </p>
+                    <p>
+                        The table contains the following columns, each providing specific details about the company's
+                        bank accounts:
+                    </p>
+                    <ul>
+                        <li><strong>SL</strong>: Serial number for easy reference of each entry.</li>
+                        <li><strong>Action</strong>: Options to edit and disable/enable the bank account record.</li>
+                        <li><strong>Bank Name</strong>: Name of the bank where the account is held.</li>
+                        <li><strong>Branch Name</strong>: Specific branch of the bank for this account.</li>
+                        <li><strong>Account Name</strong>: Official name associated with the bank account.</li>
+                        <li><strong>Status</strong>: Indicates whether the account is active or inactive.</li>
+                        <li><strong>Create Date</strong>: Date when the bank account record was created in the system.
+                        </li>
+                    </ul>
+                    <h4>Creating New Bank Accounts</h4>
+                    <p>
+                        There is an option to <strong>add new bank accounts</strong> directly from the Bank Accounts
+                        page for easy management of company finance Profiles.
+                    </p>
+                    <img src="assets/image/accounts/bank account/slide02.png" class="screenshot" alt="">
+                    <p>
+                        After clicking the <strong>Add Bank</strong> button, you are redirected to a page containing a
+                        form to add a new account. The form includes the following fields:
+                    </p>
+                    <ul>
+                        <li><strong>Add Bank</strong>: Page header indicating the purpose of the form.</li>
+                        <li><strong>Bank Name *</strong>: Field to enter the name of the bank (required).</li>
+                        <li><strong>Bank Branch Name *</strong>: Field to specify the branch of the bank (required).
+                        </li>
+                        <li><strong>Bank Account Name *</strong>: Field to enter the official name of the bank account
+                            (required).</li>
+                    </ul>
+                    <h3>Accounts Lists</h3>
+                    <p>
+                        The <strong>Accounts List</strong> section provides a centralized view of all employee and party
+                        accounts, making it easy to monitor balances, track account activity, and manage financial
+                        relationships efficiently. The table is designed for smooth navigation with <em>search</em> and
+                        <em>pagination</em> features, allowing users to quickly find and review any account while
+                        controlling how many entries are displayed per page.
+                    </p>
+                    <img src="assets/image/accounts/account list/slide01.png" class="screenshot" alt="">
+                    <p>
+                        The table contains the following columns, each providing key information:
+                    </p>
+                    <ul>
+                        <li><strong>SL</strong>: Serial number for quick reference of each entry.</li>
+                        <li><strong>Action</strong>: Options to edit account details.</li>
+                        <li><strong>Account Name</strong>: Name of the employee or party holding the account.</li>
+                        <li><strong>Account Type</strong>: Indicates whether the account belongs to an Employee or a
+                            Party.</li>
+                        <li><strong>Main Balance</strong>: Current balance in the account.</li>
+                        <li><strong>Status</strong>: Shows if the account is active or inactive.</li>
+                        <li><strong>Create Date</strong>: Date when the account was created in the system.</li>
+                    </ul>
+                    <h4>Edit Accounts</h4>
+                    <img src="assets/image/accounts/account list/slide02.png" class="screenshot" alt="">
+                    <p>
+                        Clicking the <strong>Edit</strong> button redirects you to a page where account details can be
+                        updated through a form. The form allows modification of key information to ensure accounts
+                        remain accurate and up-to-date.
+                    </p>
+                    <ul class="hash-list">
+                        <li><strong>Account Type</strong>: Field to update whether the account belongs to an Employee or
+                            a Party.</li>
+                        <li><strong>Account Name</strong>: Field to edit the name of the account holder.</li>
+                        <li><strong>Main Balance</strong>: Field to update the current balance of the account.</li>
+                    </ul>
+                    <h4>Add Accounts</h4>
+                    <img src="assets/image/accounts/account list/slide03.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Accounts List</strong> page includes an <strong>Add Account</strong> button to
+                        create new accounts. Clicking this button redirects to a form page where new accounts can be
+                        added easily, ensuring proper record-keeping for both employees and parties.
+                    </p>
+                    <ul>
+                        <li><strong>Account Type</strong>: Field to select the type of account (e.g., Employee Account).
+                        </li>
+                        <li><strong>Employee Name *</strong>: Required field to select the employee for whom the account
+                            is being created.</li>
+                        <li><strong>Main Balance *</strong>: Required field to specify the initial balance of the
+                            account.</li>
+                    </ul>
+                    <h3>Chart of Accounts</h3>
+                    <p>
+                        The <strong>Chart of Accounts</strong> page provides administrators with a structured overview
+                        of the company’s financial transactions, categorizing each transaction by its type. This
+                        organization enables administrators to quickly understand the flow of income and expenses,
+                        identify patterns, and maintain a clear hierarchy of financial records. By systematically
+                        grouping transactions, it ensures that all financial activities are transparent, easy to manage,
+                        and readily available for accurate reporting, auditing, and strategic decision-making.
+                    </p>
+                    <p>
+                        The <strong>Chart of Accounts</strong> displays all financial transactions of the company in a
+                        structured <strong>table</strong>, categorizing them by type for easy reference. The
+                        <strong>table</strong> includes <em>search</em> and <em>pagination</em> features, along with an
+                        option to select the number of entries per page, allowing administrators to quickly navigate and
+                        manage large volumes of transactions.
+                    </p>
+                    <img src="assets/image/accounts/chart of account/slide01.png" class="screenshot" alt="">
+                    <p>
+                        Each row in the <strong>table</strong> represents a transaction, and the columns provide
+                        essential details for administrators to monitor and manage accounts efficiently.
+                    </p>
+                    <ul>
+                        <li><strong>SL</strong>: Serial number for each transaction for easy reference.</li>
+                        <li><strong>Transaction Name</strong>: The name of the transaction, describing its purpose or
+                            category.</li>
+                        <li><strong>Transaction Type</strong>: Categorizes the transaction as income, expense, or other
+                            relevant type.</li>
+                        <li><strong>Status</strong>: Indicates whether the transaction is active or inactive.</li>
+                        <li><strong>Create Date</strong>: The date and time when the transaction was recorded in the
+                            system.</li>
+                    </ul>
+                    <h4>Edit Transections</h4>
+                    <img src="assets/image/accounts/chart of account/slide02.png" class="screenshot" alt="">
+                    <p>
+                        Clicking the <strong>Edit</strong> button in the <strong>Actions</strong> column allows
+                        administrators to modify a transaction’s details. This includes the ability to change the
+                        <strong>Transaction Type</strong>, switching it between <em>Income</em> and <em>Expense</em>,
+                        ensuring that all records remain accurate and up-to-date for proper financial management.
+                    </p>
+                    <h4>Add New Transections</h4>
+                    <img src="assets/image/accounts/chart of account/slide03.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Add Chart of Account</strong> option enables administrators to create new
+                        transactions and assign them the appropriate type. This feature ensures that all financial
+                        activities are correctly categorized from the start, helping maintain a well-organized and
+                        accurate record of the company’s accounts.
+                    </p>
+                    <h3>New Income</h3>
+                    <p>
+                        The <strong>New Income</strong> page provides a centralized interface for viewing and managing
+                        all transactions classified as <em>Income</em>.
+                        This page allows administrators to track incoming payments from clients, parties, or other
+                        sources, ensuring accurate recording of all revenue-related activities.
+                    </p>
+                    <p>
+                        The page displays all income transactions in a <strong>table</strong> equipped with standard
+                        features such as <em>search</em>, <em>pagination</em>,
+                        and the option to select the number of entries per page. This setup ensures easy navigation and
+                        management of large volumes of income records.
+                    </p>
+                    <img src="assets/image/accounts/new income/slide01.png" class="screenshot"
+                        alt="New Income Table Screenshot">
+                    <p>
+                        Each row in the <strong>table</strong> represents a single income transaction, and the columns
+                        provide detailed information for administrators to monitor, track, and manage transactions
+                        efficiently.
+                    </p>
+                    <ul>
+                        <li><strong>SL</strong>: Serial number of the transaction for quick reference.</li>
+                        <li><strong>Action</strong>: Options to edit or manage the transaction.</li>
+                        <li><strong>PV NO</strong>: Payment Voucher number associated with the transaction.</li>
+                        <li><strong>User Type</strong>: Indicates whether the transaction is associated with a Party or
+                            an Employee.</li>
+                        <li><strong>Party Name</strong>: Name of the client or party involved in the transaction.</li>
+                        <li><strong>Party Mobile</strong>: Contact mobile number of the party.</li>
+                        <li><strong>Party Email</strong>: Email address of the party.</li>
+                        <li><strong>Employee Name</strong>: Name of the employee involved in the transaction.</li>
+                        <li><strong>Employee Mobile</strong>: Contact mobile number of the employee.</li>
+                        <li><strong>Employee Branch</strong>: Branch where the employee is assigned.</li>
+                        <li><strong>Other Name</strong>: Any additional associated name relevant to the transaction.
+                        </li>
+                        <li><strong>Transaction Date</strong>: Date when the transaction occurred.</li>
+                        <li><strong>Transaction Type</strong>: Confirms the transaction type as <em>Income</em>.</li>
+                        <li><strong>Bank Name</strong>: Bank associated with the transaction.</li>
+                        <li><strong>Branch Name</strong>: Specific branch of the bank.</li>
+                        <li><strong>Account Name</strong>: Bank account involved in the transaction.</li>
+                        <li><strong>Chart of Account Name</strong>: Category under which the transaction is recorded.
+                        </li>
+                        <li><strong>Chart of Account Type</strong>: Type of chart account (e.g., Income).</li>
+                        <li><strong>Amount</strong>: Total amount of the income transaction.</li>
+                        <li><strong>Description</strong>: Notes or details about the transaction.</li>
+                        <li><strong>Status</strong>: Indicates whether the transaction is active or inactive.</li>
+                        <li><strong>Created Date</strong>: Date when the transaction record was created in the system.
+                        </li>
+                    </ul>
+                    <h4>Edit New Income</h4>
+                    <img src="assets/image/accounts/new income/slide02.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Edit Income</strong> page allows administrators to modify existing income
+                        transactions with a dynamic form that adjusts based on selected options.
+                        If the <strong>User Type</strong> is set to <em>Party</em>, the form includes a field to select
+                        the party name, whereas selecting <em>Employee</em> displays an employee selection field.
+                        Similarly, if the <strong>Transaction Type</strong> is <em>Bank</em>, additional fields for bank
+                        name, branch, and account appear; selecting <em>Cash</em> removes these bank-related fields.
+                        This dynamic behavior ensures that only relevant information is displayed and required, helping
+                        maintain accurate and consistent income records while simplifying the editing process.
+                    </p>
+                    <h4>Add New Income</h4>
+                    <img src="assets/image/accounts/new income/slide03.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Add Income</strong> page is designed to register new income transactions using a
+                        form that intelligently adjusts based on the selected options.
+                        Choosing <strong>User Type</strong> as <em>Other</em> will display an <strong>Other
+                            Name</strong> field, while selecting <em>Party</em> or <em>Employee</em> reveals their
+                        respective selection fields.
+                        The <strong>Cash/Bank Account</strong> selection also adapts dynamically; selecting
+                        <em>Bank</em> provides fields for bank name, branch, and account, whereas selecting
+                        <em>Cash</em> simplifies the form by hiding these fields.
+                        This dynamic design ensures that users only see and fill in the fields relevant to the
+                        transaction, streamlining the process and maintaining accurate income records.
+                    </p>
+                    <h3>New Expense</h3>
+                    <p>
+                        The <strong>New Expense</strong> page provides a centralized interface for viewing and managing
+                        all transactions classified as <em>Expense</em>.
+                        Administrators can use this page to monitor outgoing payments to parties, employees, or other
+                        sources, ensuring accurate recording of all expenditure-related activities.
+                    </p>
+                    <p>
+                        All expense transactions are displayed in a <strong>table</strong> with standard features such
+                        as <em>search</em>, <em>pagination</em>,
+                        and the option to select the number of entries per page. This layout allows easy navigation and
+                        efficient management of large volumes of expense records.
+                    </p>
+                    <img src="assets/image/accounts/new expense/slide01.png" class="screenshot"
+                        alt="New Expense Table Screenshot">
+                    <p>
+                        Each row in the <strong>table</strong> represents a single expense transaction, and the columns
+                        provide detailed information for administrators to track, manage, and audit transactions
+                        effectively.
+                    </p>
+                    <ul>
+                        <li><strong>SL</strong>: Serial number of the transaction for quick reference.</li>
+                        <li><strong>Action</strong>: Options to edit or manage the transaction.</li>
+                        <li><strong>PV NO</strong>: Payment Voucher number associated with the transaction.</li>
+                        <li><strong>User Type</strong>: Indicates whether the transaction involves a Party or an
+                            Employee.</li>
+                        <li><strong>Party Name</strong>: Name of the client or party receiving the payment.</li>
+                        <li><strong>Party Mobile</strong>: Contact mobile number of the party.</li>
+                        <li><strong>Party Email</strong>: Email address of the party.</li>
+                        <li><strong>Employee Name</strong>: Name of the employee associated with the transaction.</li>
+                        <li><strong>Employee Mobile</strong>: Contact mobile number of the employee.</li>
+                        <li><strong>Employee Branch</strong>: Branch where the employee is assigned.</li>
+                        <li><strong>Other Name</strong>: Any additional associated name relevant to the transaction.
+                        </li>
+                        <li><strong>Transaction Date</strong>: Date when the transaction occurred.</li>
+                        <li><strong>Transaction Type</strong>: Confirms the transaction type as <em>Expense</em>.</li>
+                        <li><strong>Bank Name</strong>: Bank used for the transaction, if applicable.</li>
+                        <li><strong>Branch Name</strong>: Specific bank branch, if applicable.</li>
+                        <li><strong>Account Name</strong>: Bank account involved in the expense.</li>
+                        <li><strong>Chart of Account Name</strong>: Category under which the expense is recorded.</li>
+                        <li><strong>Chart of Account Type</strong>: Type of chart account (e.g., Expense).</li>
+                        <li><strong>Amount</strong>: Total amount of the expense transaction.</li>
+                        <li><strong>Description</strong>: Notes or details about the transaction.</li>
+                        <li><strong>Status</strong>: Indicates whether the transaction is active or inactive.</li>
+                        <li><strong>Created Date</strong>: Date when the expense record was created in the system.</li>
+                    </ul>
+                    <h4>Edit Expense</h4>
+                    <img src="assets/image/accounts/new expense/slide02.png" class="screenshot"
+                        alt="Edit Expense Screenshot">
+                    <p>
+                        The <strong>Edit Expense</strong> page allows administrators to modify existing expense
+                        transactions using a dynamic form that adapts based on selected options.
+                        Selecting <strong>User Type</strong> as <em>Party</em> displays a party selection field, while
+                        choosing <em>Employee</em> shows an employee selection field.
+                        Similarly, if the <strong>Transaction Type</strong> is <em>Bank</em>, fields for bank name,
+                        branch, and account appear; selecting <em>Cash</em> hides these fields.
+                        This dynamic behavior ensures that only relevant information is shown, maintaining accurate
+                        expense records and simplifying the editing process.
+                    </p>
+                    <h4>Add New Expense</h4>
+                    <img src="assets/image/accounts/new expense/slide03.png" class="screenshot"
+                        alt="Add Expense Screenshot">
+                    <p>
+                        The <strong>Add Expense</strong> page enables administrators to record new expense transactions
+                        through a dynamically adjusting form.
+                        Choosing <strong>User Type</strong> as <em>Other</em> displays an <strong>Other Name</strong>
+                        field, while selecting <em>Party</em> or <em>Employee</em> reveals their respective selection
+                        fields.
+                        The <strong>Cash/Bank Account</strong> selection adapts based on the choice: selecting
+                        <em>Bank</em> provides fields for bank, branch, and account, whereas <em>Cash</em> simplifies
+                        the form by hiding these fields.
+                        This ensures that users only enter relevant information, streamlining the process and
+                        maintaining precise records of all expense transactions.
+                    </p>
+                    <h3>Cashbook</h3>
+                    <p>
+                        The <strong>Cashbook</strong> page provides an overall summary of the company's cash position,
+                        presenting a high-level view of cash inflows and outflows over a selected period.
+                        It highlights key financial metrics such as the <strong>Opening Balance</strong>,
+                        <strong>Closing Balance</strong>, and total amounts in cash and bank accounts, giving
+                        administrators a clear snapshot of the company's overall cash status without displaying every
+                        individual transaction. ensuring continuity in cash tracking and providing an accurate starting
+                        point for monitoring the
+                        new period
+                    </p>
+                    <div class="alert alert-info">
+                        <strong>Important Note:</strong> The <strong>Closing Balance</strong> of the current month
+                        automatically becomes the <strong>Opening Balance</strong> for the next month.
+                    </div>
+                    <h4>Traditional Cashbook Chart</h4>
+                    <img src="assets/image/accounts/cashbook/slide01.png" class="screenshot" alt="">
+                    <p>
+                        The first chart follows the traditional accounting cashbook format, summarizing cash received
+                        (income) and cash paid (expenses) side by side.
+                        The <strong>Received (Income)</strong> section shows totals for cash inflows including the
+                        opening balance, while the <strong>Payment (Expense)</strong> section presents totals for cash
+                        outflows.
+                        Each section includes essential columns such as SL Number, Date, PV No, Particulars, Cash/Bank,
+                        Description, and Amount.
+                        The totals provide a quick understanding of net cash movement over the period.
+                    </p>
+                    <h4>Custom Cashbook Summary</h4>
+                    <img src="assets/image/accounts/cashbook/slide02.png" class="screenshot" alt="">
+                    <p>
+                        The second chart provides a consolidated overview of the company's cash position, showing
+                        balances across different accounts including cash, bank, and opening balance, as well as total
+                        liabilities.
+                        It calculates the <strong>Closing Balance</strong> and <strong>Total Balance</strong>, offering
+                        a clear, high-level snapshot of the overall cash availability and financial status for
+                        decision-making purposes.
+                    </p>
+                    <h3>Commissions</h3>
+                    <p>
+                        The <strong>Commissions</strong> page provides a complete overview of all commission-based
+                        transactions recorded within the company.
+                        It brings together every commission entry — whether it originates from income or expense,
+                        involves a party, employee, or terminal, or is related to export or import operations — into one
+                        consolidated interface.
+                        This page serves as a reliable reference for administrators to assess performance, analyze
+                        profitability, and maintain transparency in financial operations.
+                    </p>
+                    <h4>Commission Summary</h4>
+                    <p>
+                        At the top of the page, a section titled <strong>Commission Summary</strong> displays a set of
+                        well-designed cards that highlight the organization’s key financial indicators.
+                        These summary cards allow users to quickly evaluate the company’s commission and billing
+                        performance at a glance, offering a snapshot of profitability and total job expenses without
+                        needing to review detailed records.
+                    </p>
+                    <img src="assets/image/accounts/commission/slide01.png" class="screenshot" alt="">
+                    <p>
+                        Each card represents a distinct financial metric that contributes to the overall commission
+                        analysis and helps management assess the company’s operational efficiency.
+                        The summary cards include the following details:
+                    </p>
+                    <ul>
+                        <li><strong>Total Commission:</strong> Displays the total accumulated commission amount earned
+                            across all recorded transactions.</li>
+                        <li><strong>Total Job Expense:</strong> Represents the combined cost of all completed jobs
+                            during the recorded period.</li>
+                        <li><strong>Total Voucher:</strong> Indicates the overall value of vouchers associated with the
+                            commission entries.</li>
+                        <li><strong>Total VAT:</strong> Shows the total Value-Added Tax amount applied to all
+                            transactions.</li>
+                        <li><strong>Total Audit Amount:</strong> Displays the total amount found during audit
+                            assessments.</li>
+                        <li><strong>Total Bill Amount:</strong> Reflects the total billed value from all recorded jobs.
+                        </li>
+                        <li><strong>Total Profit:</strong> Shows the overall net profit after all deductions, expenses,
+                            and applicable taxes.</li>
+                    </ul>
+                    <img src="assets/image/accounts/commission/" class="screenshot" alt="">
+                    <p>
+                        The <strong>Commission Summary</strong> section also includes an option to <strong>print the
+                            entire summary at once</strong>, allowing administrators to generate a complete overview of
+                        all key financial metrics in a single document.
+                        This feature is particularly useful for reporting, record-keeping, or quick presentation of
+                        overall commission performance.
+                    </p>
+                    <h4>Commission Records Table</h4>
+                    <p>
+                        Below the summary section, a detailed <strong>Commission Records Table</strong> provides an
+                        in-depth view of every individual commission transaction.
+                        This tabular format allows administrators to review, track, and manage all commission-related
+                        activities efficiently, offering transparency and traceability for every financial record.
+                    </p>
+                    <img src="assets/image/accounts/commission/slide02.png" class="screenshot" alt="">
+                    <p>
+                        The table includes standard interactive features such as <em>search</em>, <em>pagination</em>,
+                        and adjustable entries per page.
+                        Each column is designed to capture critical details about the commission transaction, ensuring
+                        that every financial movement is accurately documented and easily accessible.
+                    </p>
+                    <ul>
+                        <li><strong>SL:</strong> Serial number of the transaction for quick identification.</li>
+                        <li><strong>Action:</strong> Provides available options to view, edit, or manage the record.
+                        </li>
+                        <li><strong>Job No:</strong> Unique job identification number linked with the commission.</li>
+                        <li><strong>Bill No:</strong> Bill number corresponding to the specific commission transaction.
+                        </li>
+                        <li><strong>Type:</strong> Indicates whether the commission is tied to an expense or income
+                            entry.</li>
+                        <li><strong>Party Name:</strong> The name of the client or party involved in the commission
+                            transaction.</li>
+                        <li><strong>Terminal:</strong> Identifies the terminal or point of transaction associated with
+                            the record.</li>
+                        <li><strong>Voucher Amount:</strong> Displays the total value of the voucher related to the job.
+                        </li>
+                        <li><strong>Total Job Expense:</strong> Shows the total expenditure incurred for the associated
+                            job.</li>
+                        <li><strong>VAT:</strong> Indicates the total Value-Added Tax applied to the transaction.</li>
+                        <li><strong>Commission:</strong> Displays the commission amount earned or allocated from the
+                            job.</li>
+                        <li><strong>Total Bill Amount:</strong> Represents the total billed value for the recorded job.
+                        </li>
+                        <li><strong>Job Profit:</strong> Displays the final profit generated after deducting all costs
+                            and taxes.</li>
+                        <li><strong>Remarks:</strong> Any additional notes or details related to the commission
+                            transaction.</li>
+                        <li><strong>Bill Date:</strong> The date on which the related bill was generated.</li>
+                        <li><strong>Last Update:</strong> Indicates the most recent modification date for the record.
+                        </li>
+                        <li><strong>Create Date:</strong> The original date when the commission entry was added to the
+                            system.</li>
+                    </ul>
+                    <img src="assets/image/accounts/commission/slide03.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Edit</strong> option in the <strong>Actions</strong> column allows administrators to
+                        review and modify existing commission records as needed.
+                        Through this feature, users can correct data, update financial details, or refine transaction
+                        information to ensure complete accuracy.
+                        Additionally, the edit page includes an option at the bottom to <strong>add new terminal expense
+                            fields directly</strong>, enabling seamless expansion or adjustment of terminal-related
+                        expenses without leaving the page.
+                    </p>
+                    <img src="assets/image/accounts/commission/slide04.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Commission Records</strong> page features a <strong>filter panel</strong> that
+                        allows users to quickly locate specific commission entries.
+                        By selecting criteria such as party, terminal, job type, or date range, administrators can
+                        narrow down results for faster access and clearer analysis of commission data.
+                    </p>
+                    <ul>
+                        <li><strong>Parties:</strong> Filter transactions linked to a specific party or client.</li>
+                        <li><strong>Terminal:</strong> View commissions associated with a particular terminal.</li>
+                        <li><strong>Job Type:</strong> Filter records by the nature or category of the job.</li>
+                        <li><strong>From Date (Created Date):</strong> Define the starting date for record retrieval.
+                        </li>
+                        <li><strong>To Date (Created Date):</strong> Define the ending date for record retrieval.</li>
+                    </ul>
+                </section>
+
+                <section id="reports" class="section">
+                    <h2>Reports & Analytics</h2>
+                    <p>The Reports & Analytics section provides detailed insights into the company’s financial
+                        activities. It allows administrators to review, analyze, and track various financial reports for
+                        informed decision-making. This section ensures clear visibility into business performance and
+                        profitability.</p>
+                    <h3>Proft & Loss</h3>
+                    <img src="assets/image/reports/slide01.png" class="screenshot" alt="">
+                    <p>The Profit & Loss page allows administrators to calculate the company’s financial performance
+                        within a selected date range using the From Date and To Date fields. Administrators can input or
+                        review revenue and expense details to determine overall profit or loss. An account chart then
+                        visually summarizes these figures for clearer financial analysis.</p>
+
+                    <ul>
+                        <li><strong>Revenues</strong> — Recorded from various income sources within the system.</li>
+                        <li><strong>Expenses</strong> — Entered or reviewed by administrators to reflect operational
+                            costs.</li>
+                        <li><strong>Net Profit or Loss</strong> — Automatically calculated based on total revenues and
+                            expenses.</li>
+                    </ul>
+                    <div class="alert alert-info">
+                        <strong>Note:</strong> A print option is also available, allowing administrators to generate a
+                        physical or digital copy of the Profit & Loss report for record-keeping or analysis purposes.
+                    </div>
+                    <h3>All Profits</h3>
+                    <p>The Ledger Reports section provides a comprehensive financial record of all monetary transactions
+                        conducted across various accounts and entities within the organization. Each ledger serves as a
+                        detailed statement of specific financial activities, ensuring accurate tracking, auditing, and
+                        reconciliation of funds.Administrators can generate each ledger report in multiple formats,
+                        including PDF and Excel, or print them directly from the system.</p>
+                    <h4>Cash Ledger</h4>
+                    <p>
+                        The Cash Ledger acts as the organization’s primary reference for recording <strong>all
+                            cash-based
+                            transactions</strong>. It lists every inflow and outflow in chronological order, allowing
+                        real-time visibility
+                        over liquidity conditions. With accurate and consistent entries, this ledger enhances financial
+                        accountability and
+                        provides a clear overview of the company’s operational cash movements.
+                    </p>
+                    <img src="assets/image/reports/slide02.png" class="screenshot" alt="">
+                    <p>
+                        The Cash Ledger includes useful tools such as <strong>pagination</strong>, <strong>search
+                            filters</strong>, and
+                        <strong>entry count controls</strong> for seamless data handling. Users can instantly
+                        <strong>export
+                            reports</strong> in Excel or PDF format or print them for internal review. Flexible filter
+                        settings such as
+                        <strong>User Type</strong> (Employee, Party, or Other), <strong>Chart of Accounts</strong>, and
+                        <strong>Date Range</strong> provide targeted access to relevant records for detailed analysis.
+                    </p>
+                    <p>
+                        Every entry in the Cash Ledger outlines crucial information — including transaction purpose,
+                        amount, and the
+                        involved parties — offering a complete and transparent breakdown of the organization’s cash
+                        flow. The interface
+                        combines summary and detailed data for a well-structured and efficient review process.
+                    </p>
+                    <img src="assets/image/reports/slide03.png" class="screenshot" alt="">
+                    <p>The table columns record the key financial details for each cash transaction.</p>
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> A unique identifier assigned to every transaction entry.</li>
+                        <li><strong>Action:</strong> Buttons to view, modify, or print specific records.</li>
+                        <li><strong>Transaction Date:</strong> Specifies when the transaction was carried out.</li>
+                        <li><strong>Party/Employee/Other Name:</strong> Identifies the entity or individual involved.
+                        </li>
+                        <li><strong>Chart of Account:</strong> Defines the category of the transaction.</li>
+                        <li><strong>Title:</strong> A concise description of the payment purpose.</li>
+                        <li><strong>Debit:</strong> Displays the outgoing cash amount.</li>
+                        <li><strong>Credit:</strong> Displays the incoming cash amount.</li>
+                        <li><strong>Balance:</strong> The running total after each cash transaction.</li>
+                    </ul>
+                    <p>
+                        The Employee Ledger uses a <strong>continuous debit-credit system</strong> that recalculates
+                        balances with each
+                        entry. This provides a precise view of every employee’s financial transactions. The
+                        <strong>closing balance for one month</strong> automatically becomes the <strong>opening balance
+                            for the
+                            next</strong>, maintaining a smooth and uninterrupted accounting flow.
+                    </p>
+
+                    <img src="assets/image/reports/slide04.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Edit</strong> function in the Action column enables real-time record updates. Its
+                        responsive form
+                        structure adapts based on the transaction type selected, ensuring accurate data entry and
+                        maintaining consistency
+                        across all records.
+                    </p>
+
+                    <h4>Bank Ledger</h4>
+                    <p>
+                        The Bank Ledger tracks <strong>all financial activities processed through organizational bank
+                            accounts</strong>.
+                        It provides an ordered record of deposits, withdrawals, and transfers, helping administrators
+                        manage and reconcile
+                        all bank-related operations effectively.
+                    </p>
+                    <img src="assets/image/reports/slide05.png" class="screenshot" alt="">
+                    <p>
+                        The table offers several management tools, including <strong>pagination</strong>, <strong>search
+                            filters</strong>, and <strong>adjustable entry views</strong>. Users can <strong>print or
+                            export
+                            reports</strong> as PDF and Excel documents. Built-in filters — such as <strong>User
+                            Type</strong>,
+                        <strong>Chart of Accounts</strong>, and <strong>Date Range</strong> — ensure quick access to
+                        specific banking data.
+                    </p>
+                    <p>
+                        Each record in this ledger provides a transparent summary of bank transactions, detailing every
+                        deposit and
+                        withdrawal. It supports clear reconciliation with official bank statements, minimizing financial
+                        discrepancies.
+                    </p>
+                    <img src="assets/image/reports/slide06.png" class="screenshot" alt="">
+                    <p>The columns in the Bank Ledger are structured to clearly represent every banking activity.</p>
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Sequential number for reference.</li>
+                        <li><strong>Action:</strong> Access tools for viewing, editing, or printing the entry.</li>
+                        <li><strong>Transaction Date:</strong> Specifies when the banking transaction occurred.</li>
+                        <li><strong>Party/Employee/Other Name:</strong> Identifies the connected individual or entity.
+                        </li>
+                        <li><strong>Chart of Account:</strong> Categorizes the purpose of the transaction.</li>
+                        <li><strong>Title:</strong> Short label summarizing the operation.</li>
+                        <li><strong>Debit:</strong> Reflects funds withdrawn from the bank.</li>
+                        <li><strong>Credit:</strong> Reflects funds deposited into the bank.</li>
+                        <li><strong>Balance:</strong> Displays the running total after each transaction.</li>
+                    </ul>
+                    <p>
+                        The Employee Ledger follows a <strong>real-time debit-credit model</strong>, recalculating the
+                        total after each
+                        activity. Monthly <strong>closing balances</strong> automatically transition into the next
+                        month’s
+                        <strong>opening balance</strong>, ensuring continuous financial alignment between reporting
+                        periods.
+                    </p>
+
+                    <img src="assets/image/reports/slide07.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Edit</strong> function presents a responsive interface that dynamically adapts
+                        fields based on
+                        transaction context, allowing precise updates to bank data with complete traceability.
+                    </p>
+
+                    <h4>Party Ledger</h4>
+                    <p>
+                        The Party Ledger consolidates <strong>financial interactions with third-party entities</strong>
+                        including clients,
+                        vendors, and business partners. It helps track credit, debit, and outstanding amounts to
+                        maintain transparent
+                        financial relationships and streamlined settlements.
+                    </p>
+                    <img src="assets/image/reports/slide08.png" class="screenshot" alt="">
+                    <p>
+                        Featuring <strong>interactive navigation tools</strong> such as pagination, search filters, and
+                        entry controls,
+                        this ledger ensures efficient data management. Reports can be generated in PDF or Excel formats
+                        or printed as
+                        needed. Filters like <strong>User Type</strong>, <strong>Chart of Accounts</strong>, and
+                        <strong>Date
+                            Range</strong> refine searches for accuracy and relevance.
+                    </p>
+                    <p>
+                        Each record displays detailed transaction information with respective parties, clarifying
+                        pending balances and
+                        payment statuses to ensure consistent financial oversight.
+                    </p>
+                    <img src="assets/image/reports/slide09.png" class="screenshot" alt="">
+                    <p>The Party Ledger table includes organized columns for clear data representation.</p>
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Serial transaction reference.</li>
+                        <li><strong>Action:</strong> Enables viewing, editing, or printing a record.</li>
+                        <li><strong>Transaction Date:</strong> When the exchange occurred.</li>
+                        <li><strong>Party/Employee/Other Name:</strong> Identifies the involved party.</li>
+                        <li><strong>Chart of Account:</strong> Classifies the transaction (e.g., invoice, payment, or
+                            adjustment).</li>
+                        <li><strong>Title:</strong> Descriptive summary of the transaction.</li>
+                        <li><strong>Debit:</strong> Outgoing payments to the party.</li>
+                        <li><strong>Credit:</strong> Incoming payments from the party.</li>
+                        <li><strong>Balance:</strong> Displays the current financial position for the party.</li>
+                    </ul>
+                    <p>
+                        This ledger automatically maintains a <strong>net balance</strong> for each party as new entries
+                        are logged,
+                        helping track pending dues and collections efficiently.
+                    </p>
+                    <img src="assets/image/reports/slide10.png" class="screenshot" alt="">
+                    <p>
+                        Using the <strong>Edit</strong> feature, users can adjust existing records. The adaptive design
+                        ensures the form
+                        aligns with transaction details for accurate modifications.
+                    </p>
+
+                    <h4>Employee Ledger</h4>
+                    <p>
+                        The Employee Ledger captures <strong>all financial activities involving staff members</strong> —
+                        including job
+                        payments, allowances, and reimbursements. It provides clarity over employee-related financial
+                        exchanges while
+                        supporting transparent recordkeeping.
+                    </p>
+                    <img src="assets/image/reports/slide11.png" class="screenshot" alt="">
+                    <p>
+                        Built-in tools such as <strong>pagination</strong>, <strong>search filters</strong>, and entry
+                        limits simplify
+                        navigation through extensive records. Reports can be exported in <strong>PDF or Excel</strong>
+                        or printed for
+                        documentation. Filters for <strong>User Type</strong>, <strong>Chart of Accounts</strong>, and
+                        <strong>Date Range</strong> make targeted reviews straightforward.
+                    </p>
+                    <p>
+                        Each entry includes key details — employee name, transaction nature, debit or credit values, and
+                        balance
+                        adjustments — allowing comprehensive visibility of employee payments and deductions.
+                    </p>
+                    <img src="assets/image/reports/slide12.png" class="screenshot" alt="">
+                    <p>The Employee Ledger table is formatted to present organized and transparent financial data.</p>
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Sequential record identifier.</li>
+                        <li><strong>Action:</strong> Options to view, modify, or print entries.</li>
+                        <li><strong>Transaction Date:</strong> Specifies when the transaction occurred.</li>
+                        <li><strong>Party/Employee/Other Name:</strong> Identifies the employee concerned.</li>
+                        <li><strong>Chart of Account:</strong> Categorizes by type (e.g., salary, reimbursement, or
+                            allowance).</li>
+                        <li><strong>Title:</strong> Describes the purpose of the transaction.</li>
+                        <li><strong>Debit:</strong> Displays amounts paid to the employee.</li>
+                        <li><strong>Credit:</strong> Represents deductions or returns.</li>
+                        <li><strong>Balance:</strong> Shows the updated account total after each record.</li>
+                    </ul>
+                    <p>
+                        The Employee Ledger maintains a <strong>real-time debit-credit tracking process</strong> that
+                        continuously updates
+                        balances. The <strong>month-end closing balance</strong> automatically rolls over as the next
+                        month’s
+                        <strong>opening balance</strong>, ensuring continuous reporting accuracy.
+                    </p>
+
+                    <img src="assets/image/reports/slide13.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Edit</strong> function allows quick adjustments to employee transaction records. The
+                        form layout
+                        automatically adapts to the transaction type for efficient updates.
+                    </p>
+
+                    <h4>Salary Ledger</h4>
+                    <p>
+                        The Salary Ledger is dedicated to recording <strong>all salary-related transactions</strong>
+                        across the
+                        organization. It centralizes payment information, ensuring that payroll data remains accurate,
+                        traceable, and
+                        easily reviewable.
+                    </p>
+                    <img src="assets/image/reports/slide14.png" class="screenshot" alt="">
+                    <p>
+                        Features such as <strong>pagination</strong>, <strong>search functionality</strong>, and
+                        <strong>entry count
+                            control</strong> streamline salary data management. Reports can be <strong>exported or
+                            printed</strong> for HR
+                        or auditing use. Filters like <strong>User Type</strong>, <strong>Chart of Accounts</strong>,
+                        and
+                        <strong>Date Range</strong> enable precise record selection.
+                    </p>
+                    <p>
+                        Each record outlines payment date, employee, and corresponding debit or credit values, ensuring
+                        payroll consistency
+                        and easy reconciliation with financial reports.
+                    </p>
+                    <img src="assets/image/reports/slide15.png" class="screenshot" alt="">
+                    <p>The following columns organize payroll-related details for easy analysis:</p>
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Serial number for the salary transaction.</li>
+                        <li><strong>Action:</strong> View, modify, or print salary records.</li>
+                        <li><strong>Transaction Date:</strong> Date of payment or salary adjustment.</li>
+                        <li><strong>Party/Employee/Other Name:</strong> Employee receiving payment.</li>
+                        <li><strong>Chart of Account:</strong> Categorizes the transaction under payroll.</li>
+                        <li><strong>Title:</strong> Short description of the payment or allowance.</li>
+                        <li><strong>Debit:</strong> Salary disbursed to employees.</li>
+                        <li><strong>Credit:</strong> Refunds or corrections applied.</li>
+                        <li><strong>Balance:</strong> Updated payroll balance after the transaction.</li>
+                    </ul>
+                    <p>
+                        The ledger maintains a <strong>rolling debit-credit balance system</strong> that updates
+                        automatically after each
+                        transaction. The <strong>closing fund balance</strong> of one month transitions into the
+                        <strong>opening balance of
+                            the next</strong>, preserving consistent payroll tracking.
+                    </p>
+
+                    <img src="assets/image/reports/slide16.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Edit</strong> button allows precise modification of salary data through adaptive
+                        forms that adjust to
+                        transaction criteria for accurate updates.
+                    </p>
+
+                    <h4>Loan Ledger</h4>
+                    <p>
+                        The Loan Ledger keeps detailed records of <strong>all loans issued and repaid</strong> by
+                        employees or third
+                        parties. It provides clarity on loan disbursements, repayments, and remaining balances, ensuring
+                        effective
+                        management of the organization’s lending operations.
+                    </p>
+                    <img src="assets/image/reports/slide17.png" class="screenshot" alt="">
+                    <p>
+                        Equipped with <strong>pagination</strong>, <strong>search</strong>, and <strong>export
+                            capabilities</strong> (PDF,
+                        Excel, or print), this ledger simplifies monitoring and reconciliation. Filters for <strong>User
+                            Type</strong>, <strong>Chart of Accounts</strong>, and <strong>Date Range</strong> help
+                        isolate records for
+                        focused analysis.
+                    </p>
+                    <p>
+                        Each entry displays loan details such as issue amount, repayment data, and updated balances —
+                        ensuring full
+                        traceability of financial obligations.
+                    </p>
+                    <img src="assets/image/reports/slide18.png" class="screenshot" alt="">
+                    <p>The Loan Ledger table structures loan information clearly across essential fields.</p>
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Unique ID for each loan entry.</li>
+                        <li><strong>Action:</strong> View, modify, or print transaction records.</li>
+                        <li><strong>Transaction Date:</strong> Indicates when the loan transaction occurred.</li>
+                        <li><strong>Party/Employee/Other Name:</strong> Identifies the borrower.</li>
+                        <li><strong>Chart of Account:</strong> Classifies the loan category.</li>
+                        <li><strong>Title:</strong> Brief note specifying loan issue or repayment.</li>
+                        <li><strong>Debit:</strong> Represents loan amounts disbursed.</li>
+                        <li><strong>Credit:</strong> Represents repayment amounts received.</li>
+                        <li><strong>Balance:</strong> Displays remaining payable balance.</li>
+                    </ul>
+                    <p>
+                        This ledger runs on a <strong>cumulative balance method</strong> that adjusts instantly with
+                        each debit or credit,
+                        maintaining accuracy and transparency across all records.
+                    </p>
+                    <img src="assets/image/reports/slide19.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Edit</strong> option allows administrators to update loan records with ease. Its
+                        form adapts according
+                        to context, ensuring consistency in data entry and management.
+                    </p>
+
+                    <h4>Other Transaction Ledger</h4>
+                    <p>
+                        The Other Transaction Ledger logs <strong>miscellaneous financial operations</strong> that do
+                        not fit under
+                        employee or party categories. This includes unique expenditures, adjustments, or special costs,
+                        ensuring that all
+                        transactions — even irregular ones — are properly accounted for.
+                    </p>
+                    <img src="assets/image/reports/slide20.png" class="screenshot" alt="">
+                    <p>
+                        With efficient <strong>search</strong>, <strong>pagination</strong>, and <strong>export
+                            features</strong>, this
+                        ledger ensures smooth record handling. Filters such as <strong>User Type</strong>, <strong>Chart
+                            of
+                            Accounts</strong>, and <strong>Date Range</strong> help locate specific records quickly.
+                    </p>
+                    <p>
+                        Each transaction entry includes essential data like amount, purpose, and type. This ledger
+                        bridges the gap between
+                        categorized and exceptional financial records for complete coverage.
+                    </p>
+                    <img src="assets/image/reports/slide21.png" class="screenshot" alt="">
+                    <p>The columns are designed for systematic recording of all other transaction details:</p>
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Sequential ID for reference.</li>
+                        <li><strong>Action:</strong> View, modify, or manage entries.</li>
+                        <li><strong>Transaction Date:</strong> Specifies when the record was made.</li>
+                        <li><strong>Party/Employee/Other Name:</strong> Identifies the source or transaction category.
+                        </li>
+                        <li><strong>Chart of Account:</strong> Defines the type of financial entry.</li>
+                        <li><strong>Title:</strong> Short summary of the transaction purpose.</li>
+                        <li><strong>Debit:</strong> Outgoing expenses or payments.</li>
+                        <li><strong>Credit:</strong> Incoming funds or revenue.</li>
+                        <li><strong>Balance:</strong> Displays cumulative standing after each entry.</li>
+                    </ul>
+                    <p>
+                        The ledger maintains a <strong>continuous debit-credit balance</strong> mechanism that keeps
+                        data updated in real
+                        time. Monthly closing figures are carried over automatically to ensure consistent reporting.
+                    </p>
+                    <img src="assets/image/reports/slide22.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Edit</strong> tool enables administrators to adjust existing records. The form
+                        dynamically adapts to
+                        match transaction context, making editing smooth and controlled.
+                    </p>
+
+                    <h4>Daily Transaction Ledger</h4>
+                    <p>
+                        The Daily Transaction Ledger compiles a <strong>day-wise summary of all financial
+                            activities</strong> across every
+                        ledger in the system. It integrates records from cash, bank, employee, salary, loan, and other
+                        ledgers to offer a
+                        consolidated view of daily financial performance.
+                    </p>
+                    <img src="assets/image/reports/slide23.png" class="screenshot" alt="">
+                    <p>
+                        Interactive elements like <strong>pagination</strong>, <strong>search</strong>, and
+                        <strong>customizable
+                            entry</strong> views allow effortless navigation through daily records. Reports can be
+                        printed or exported in
+                        <strong>PDF and Excel</strong> formats. Administrators can narrow results using filters such as
+                        <strong>User
+                            Type</strong>, <strong>Chart of Accounts</strong>, or <strong>Date Range</strong>.
+                    </p>
+                    <p>
+                        The Daily Ledger unifies all monetary movements, showing both inflows and outflows across the
+                        system. It offers a
+                        real-time picture of the organization’s financial activity on any given day.
+                    </p>
+                    <img src="assets/image/reports/slide24.png" class="screenshot" alt="">
+                    <p>The table columns are optimized to record the most important details of daily transactions:</p>
+                    <ul class="hash-list">
+                        <li><strong>SL:</strong> Sequential number for the day’s transaction.</li>
+                        <li><strong>Action:</strong> Tools for editing, viewing, or printing records.</li>
+                        <li><strong>Transaction Date:</strong> Indicates the date of the financial movement.</li>
+                        <li><strong>Party/Employee/Other Name:</strong> Identifies who the transaction involved.</li>
+                        <li><strong>Chart of Account:</strong> Specifies the related account category.</li>
+                        <li><strong>Title:</strong> Short summary of transaction details.</li>
+                        <li><strong>Debit:</strong> Represents all daily expenditures.</li>
+                        <li><strong>Credit:</strong> Represents all daily incomes.</li>
+                        <li><strong>Balance:</strong> Displays the final balance after all entries of the day.</li>
+                    </ul>
+                    <p>
+                        The ledger uses an <strong>automatic balance recalculation system</strong> that updates after
+                        each transaction.
+                        Each month’s closing total is rolled forward as the next month’s starting point, ensuring
+                        continuous financial
+                        flow.
+                    </p>
+                    <img src="assets/image/reports/slide25.png" class="screenshot" alt="">
+                    <p>
+                        The <strong>Edit</strong> option lets administrators refine daily entries as required. The form
+                        layout adjusts
+                        dynamically according to transaction type, preserving data accuracy across all ledgers.
+                    </p>
+
+                </section>
+
+                <section id="employee-voucher" class="section">
+                    <h2>Employee Voucher</h2>
+
+                    <p>The Employee Voucher module helps employees track their job-related earnings and vouchers
+                        efficiently. It provides quick insight into total received amounts, submitted vouchers, and
+                        outstanding balances for any selected period.</p>
+
+                    <img src="assets/image/employee voucher/adminPanelSlide01.png" class="screenshot" alt="" />
+
+                    <p>Employees can view all transactions in one place, submit new vouchers directly through the
+                        system, and filter records by month or year, making personal financial tracking and
+                        reconciliation easier.</p>
+                    <h3>Voucher Lists</h3>
+                    <p>The Voucher Lists page displays all employee vouchers in a structured table format, providing a
+                        clear overview of each entry. Administrators and employees can view key details such as voucher
+                        amounts, associated jobs, submission dates, and status, facilitating easy tracking and review.
+                    </p>
+                    <img src="assets/image/employee voucher/adminPanelSlide02.png" class="screenshot" alt="">
+                    <p>The Voucher Lists table provides a comprehensive view of all employee vouchers, making it easy to
+                        track and review each entry efficiently. Each column represents key information related to the
+                        voucher and its associated details.</p>
+
+                    <ul>
+                        <li><strong>SL:</strong> Serial number indicating the order of each voucher in the table.</li>
+                        <li><strong>Action:</strong> Options to view, edit, or delete the voucher entry.</li>
+                        <li><strong>Employee:</strong> Name of the employee associated with the voucher.</li>
+                        <li><strong>Voucher Type:</strong> Category of the voucher, such as job-related or
+                            expense-related.</li>
+                        <li><strong>Voucher Name:</strong> Title of the voucher.</li>
+                        <li><strong>Bill No:</strong> Reference number for the related bill.</li>
+                        <li><strong>Amount:</strong> Total value of the voucher.</li>
+                        <li><strong>Extra Bill:</strong> Any additional charges associated with the voucher.</li>
+                        <li><strong>Profit:</strong> Profit generated from the voucher.</li>
+                        <li><strong>Voucher Date:</strong> Date when the voucher was issued or recorded.</li>
+                        <li><strong>Last Update:</strong> Date and time of the most recent modification to the voucher
+                            entry.</li>
+                        <li><strong>Created Date:</strong> Date when the voucher was initially created in the system.
+                        </li>
+                    </ul>
+
+                    <p>The filter option allows users to narrow down voucher records based on key criteria.
+                        Administrators and employees can select a specific employee, voucher type, and a date range
+                        using From Date and To Date fields to quickly locate relevant entries.</p>
+                </section>
+
+                <section id="settings" class="section">
+                    <h2>Settings</h2>
                 </section>
 
                 <!-- Business Management Section 
@@ -484,7 +1779,6 @@
                     </div>
                 </section>
                 -->
-
 
                 <!-- Financial Management Section 
                 <section id="financial-management" class="section">
@@ -549,7 +1843,6 @@
                 </section>
                 -->
 
-
                 <!-- Reporting & Analytics Section 
                 <section id="reporting-analytics" class="section">
                     <h2>Reporting & Analytics</h2>
@@ -599,8 +1892,8 @@
                 </section>
                 -->
 
-
                 <!-- Agent-Login Section -->
+
                 <section id="Agent-Login" class="section">
                     <h2>Agent Login Page</h2>
                     <p>The Agent Login page enables agents to securely access their personalized dashboards. It provides
@@ -614,7 +1907,7 @@
                         <li><strong>Password:</strong> Provide your secure password to gain access to the dashboard.
                         </li>
                     </ul>
-                    <img src="assets/image/agent login/screencapture-a2zcnfsolution-login-2025-10-27-11_24_27.png"
+                    <img src="assets/image/agent login/screencapture-a2zcnfsolution-login-2025-10-29-11_49_40.png"
                         alt="Agent Login Page Screenshot" class="screenshot">
                 </section>
 
@@ -643,8 +1936,7 @@
                         <li><strong>Recent Jobs Table:</strong> Lists recently created jobs with details like Job No,
                             Status, and Creation Date for easy reference.</li>
                     </ul>
-                    <img src="assets/image/agent dahsboard/screencapture-a2zcnfsolution-cnf-dashboard-2025-10-27-11_53_00.png"
-                        class="screenshot" alt="Agent Dashboard Screenshot">
+                    <img src="assets/image/agent dahsboard/slide01.png" class="screenshot" alt="">
 
                     <ul class="hash-list">
                         <li><strong>Top Cards:</strong> Summarize today’s job counts—created, initialized, processing,
@@ -671,8 +1963,8 @@
                     <p>The Jobs page gives agents a centralized view of all existing jobs. Users can apply filters
                         through the collapsible filter panel or add new jobs using the “Add Job” button. Below these
                         options lies a dynamic table presenting all job records for easy tracking and management.</p>
-                    <img src="assets/image/job management/screencapture-a2zcnfsolution-cnf-jobs-2025-10-27-12_27_56.png"
-                        class="screenshot" alt="Jobs Listing Page Screenshot">
+                    <img src="assets/image/job management/slide01.png" class="screenshot"
+                        alt="Jobs Listing Page Screenshot">
 
                     <h4>Page Features</h4>
                     <p>The Jobs page includes key tools for efficient management—filtering, job creation, and detailed
@@ -722,8 +2014,8 @@
                     <p>The Job Creation page allows agents to register new jobs by providing all required details. It
                         can be accessed directly from the “Add Job” button on the Jobs page, ensuring a seamless
                         workflow for job entry and management.</p>
-                    <img src="assets/image/job management/screencapture-a2zcnfsolution-cnf-job-create-2025-10-27-12_47_49.png"
-                        class="screenshot" alt="Job Creation Page Screenshot">
+                    <img src="assets/image/job management/slide02.png" class="screenshot"
+                        alt="Job Creation Page Screenshot">
                 </section>
 
                 <!-- Employee-Voucher Section -->
@@ -733,8 +2025,8 @@
                         by year or month, add new vouchers, and view key financial summaries such as total voucher
                         amount, total received, and current balance. Two charts visually display total received vouchers
                         and overall voucher distribution.</p>
-                    <img src="assets/image/employee voucher/screencapture-a2zcnfsolution-cnf-employee-voucher-2025-10-27-13_19_03.png"
-                        class="screenshot" alt="Employee Voucher Page Screenshot">
+                    <img src="assets/image/employee voucher/slide01.png" class="screenshot"
+                        alt="Employee Voucher Page Screenshot">
 
                     <h3>Page Features</h3>
                     <ul>
@@ -756,8 +2048,8 @@
                         including serial number, employee, voucher type, name, bill number, amount, voucher date, last
                         update, and creation date. Pagination, search, and display controls help users navigate records
                         effortlessly.</p>
-                    <img src="assets/image/employee voucher/screencapture-a2zcnfsolution-cnf-employee-voucher-list-2025-10-27-13_45_21.png"
-                        class="screenshot" alt="Voucher List Page Screenshot">
+                    <img src="assets/image/employee voucher/slide02.png" class="screenshot"
+                        alt="Voucher List Page Screenshot">
                 </section>
 
                 <!-- Route Structure Section -->
